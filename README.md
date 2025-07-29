@@ -1,4 +1,4 @@
-# 🌟 Hyprland Dotfiles
+# Hyprland Dotfiles
 
 A beautiful and functional Arch Linux Hyprland configuration with intelligent package caching and automated installation scripts.
 
@@ -7,7 +7,7 @@ A beautiful and functional Arch Linux Hyprland configuration with intelligent pa
 ![Waybar](https://img.shields.io/badge/Bar-Waybar-purple?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
-## ✨ Features
+## Features
 
 - 🎨 **Dynamic Theming** with pywal - Automatically generates color schemes from wallpapers
 - 🖥️ **Hyprland Window Manager** - Modern Wayland compositor with smooth animations
@@ -18,10 +18,10 @@ A beautiful and functional Arch Linux Hyprland configuration with intelligent pa
 - 🌈 **Custom Styling** - Cohesive design across all components
 - 📁 **Organized Structure** - Modular installation scripts for easy maintenance
 
-## 🖼️ Screenshots
-[Screenshots] (docs/1.png)
+## Screenshots
+[Screenshots](docs/1.jpg)
 
-## 📦 What's Included
+## What's Included
 
 ### Core Components
 - **Window Manager**: Hyprland with dynamic cursors plugin
@@ -48,7 +48,7 @@ A beautiful and functional Arch Linux Hyprland configuration with intelligent pa
 - **Cursor Theme**: Bibata Modern Classic
 - **Fonts**: Nerd Fonts collection
 
-## 🚀 Quick Installation
+## Quick Installation
 
 ### Prerequisites
 ```bash
@@ -67,7 +67,7 @@ chmod +x *.sh
 ./fullinstall.sh
 ```
 
-## 📋 Installation Options
+## Installation Options
 
 ### 1. Full Automatic Installation
 Installs everything with default settings:
@@ -99,7 +99,7 @@ Use the backup installation script:
 ./fullinstall-backup.sh
 ```
 
-## 🎯 Smart Package Management
+## Smart Package Management
 
 This dotfiles setup includes an intelligent package caching system for faster and offline installations.
 
@@ -129,7 +129,7 @@ This dotfiles setup includes an intelligent package caching system for faster an
 3. **Offline Support**: Can install entirely from cache when all packages are available
 4. **Error Handling**: Graceful fallbacks when cache installation fails
 
-## 🔧 Configuration
+## Configuration
 
 ### Key Bindings
 | Key Combination | Action |
@@ -155,7 +155,7 @@ This dotfiles setup includes an intelligent package caching system for faster an
 wal -i /path/to/your/wallpaper.jpg
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 dotfiles/
@@ -178,7 +178,7 @@ dotfiles/
 └── .bashrc                   # Bash configuration
 ```
 
-## 🛠️ Customization
+## Customization
 
 ### Adding New Wallpapers
 1. Add wallpapers to `~/dotfiles/wallpapers/`
@@ -195,7 +195,7 @@ dotfiles/
 nwg-look
 ```
 
-## 🔍 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -224,7 +224,7 @@ journalctl -u display-manager -f
 systemctl --user restart pipewire pipewire-pulse
 ```
 
-## 📚 Dependencies
+## Dependencies
 
 ### Core Dependencies
 - `hyprland` - Window manager
@@ -241,7 +241,7 @@ systemctl --user restart pipewire pipewire-pulse
 
 *Full package list available in `package-manager.sh`*
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/amazing-feature`)
@@ -249,11 +249,11 @@ systemctl --user restart pipewire pipewire-pulse
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📜 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Original dotfiles inspiration from [@elifouts](https://github.com/elifouts/Dotfiles)
 - [Hyprland](https://hyprland.org/) - Amazing Wayland compositor
@@ -261,7 +261,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [pywal](https://github.com/dylanaraps/pywal) - Color scheme generator
 - The Arch Linux and Hyprland communities
 
-## 📧 Contact
+## Contact
 
 - GitHub: [@ktauchathuranga](https://github.com/ktauchathuranga)
 - Issues: [Create an issue](https://github.com/ktauchathuranga/dotfiles/issues)
