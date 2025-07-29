@@ -1,0 +1,51 @@
+name: Cache Hyprland Packages
+
+on:
+  workflow_dispatch:
+
+jobs:
+  cache-packages:
+    runs-on: ubuntu-latest
+    container:
+      image: archlinux:latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Full history for commits
+
+      - name: Set up keyring and update Arch
+        run: |
+          pacman -Sy --noconfirm archlinux-keyring
+          pacman -Syu --noconfirm
+
+      - name: Install base-devel and yay
+        run: |
+          pacman -S --noconfirm git base-devel
+          useradd -m builder
+          echo "builder ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
+          su builder -c "git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si --noconfirm"
+
+      - name: Download packages to cache
+        run: |
+          su builder -c "cd $GITHUB_WORKSPACE/scripts && bash package-manager.sh download"
+
+      - name: Configure git user
+        run: |
+          git config --global user.email "github-actions@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+
+      - name: Commit package_cache to main branch
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: |
+          git add dotfiles/package_cache/
+          git status
+          # Only commit if there are changes
+          if ! git diff --cached --quiet; then
+            git commit -m "Update package cache [CI]"
+            git push https://MadhukaH:${GH_PAT}@github.com/MadhukaH/dotfiles.git HEAD:main
+          else
+            echo "No changes to commit."
+          fi
