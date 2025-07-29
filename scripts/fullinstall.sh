@@ -39,7 +39,7 @@ if [[ $install_choice == "a" ]]; then
         "illogical-impulse-bibata-modern-classic-bin" "nautilus" "gvfs" "tumbler" 
         "eza" "bottom" "htop" "blueman" "bluez" "pipewire" "pipewire-pulse" 
         "pipewire-alsa" "pipewire-jack" "pavucontrol" "pulsemixer" "gnome-network-displays" 
-        "gst-plugins-bad"
+        "gst-plugins-bad" "polkit-gnome"
     )
     
     for package in "${packages[@]}"; do
@@ -82,7 +82,7 @@ elif [[ $install_choice == "m" ]]; then
     fi
     
     # Confirm each package installation
-    for package in python-pywal16 swww waybar swaync starship myfetch firefox neovim python-pywalfox hypridle hyprpicker hyprshot hyprlock pyprland wlogout fd cava brightnessctl clock-rs-git nerd-fonts nwg-look qogir-icon-theme materia-gtk-theme illogical-impulse-bibata-modern-classic-bin nautilus gvfs tumbler eza bottom htop; do
+    for package in python-pywal16 swww polkit-gnome waybar swaync starship myfetch firefox neovim python-pywalfox hypridle hyprpicker hyprshot hyprlock pyprland wlogout fd cava brightnessctl clock-rs-git nerd-fonts nwg-look qogir-icon-theme materia-gtk-theme illogical-impulse-bibata-modern-classic-bin nautilus gvfs tumbler eza bottom htop; do
         read -p "Do you want to install $package? (y/n, default: y): " choice
         choice=${choice:-y}
         if [[ "$choice" == "y" ]]; then

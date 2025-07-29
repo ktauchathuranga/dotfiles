@@ -137,10 +137,10 @@ download_all_packages() {
         "materia-gtk-theme" "illogical-impulse-bibata-modern-classic-bin"
         
         # File management
-        "nautilus" "thunar" "gvfs" "tumbler" "eza" "bottom" "htop"
+        "nautilus" "thunar" "gvfs" "tumbler" "eza" "bottom" "htop" "polkit-gnome"
         
         # Applications
-        "libreoffice-fresh" "spotify" "ncspot" "discord" "code"
+        #"libreoffice-fresh" "spotify" "ncspot" "discord" "code"
         
         # Audio/Bluetooth
         "blueman" "bluez" "pipewire" "pipewire-pulse" "pipewire-alsa" 

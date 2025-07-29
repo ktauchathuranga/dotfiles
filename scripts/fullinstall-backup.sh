@@ -30,7 +30,7 @@ smart_install "fd"
 smart_install "cava"
 smart_install "brightnessctl"
 smart_install "clock-rs-git"
-
+smart_install "polkit-gnome"
 smart_install "nerd-fonts"
 
 smart_install "nwg-look"
