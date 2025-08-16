@@ -1,7 +1,0 @@
-[window]
-dynamic_padding = false
-opacity = 0.85
-
-[window.padding]
-x = 20
-y = 15

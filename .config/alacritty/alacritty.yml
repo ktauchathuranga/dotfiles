@@ -1,6 +1,0 @@
-window:
-  padding:
-    x: 20
-    y: 15
-  dynamic_padding: false
-

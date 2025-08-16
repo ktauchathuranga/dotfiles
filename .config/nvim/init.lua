@@ -68,14 +68,13 @@ require("lazy").setup({
         config = function()
             require('mason-lspconfig').setup({
                 ensure_installed = {
-                    'clangd',        -- C/C++
                     'pyright',       -- Python
                     'jdtls',         -- Java
                     'rust_analyzer', -- Rust
                     'intelephense',  -- PHP
                     'lua_ls',        -- Lua
                 },
-                automatic_installation = true,
+                automatic_installation = false,
             })
         end
     },
@@ -771,7 +770,7 @@ vim.api.nvim_create_autocmd("VimEnter", {
 })
 
 -- Enable line numbers only for normal file buffers
-vim.api.nvim_create_autocmd({"BufWinEnter", "BufRead", "BufNewFile"}, {
+vim.api.nvim_create_autocmd({ "BufWinEnter", "BufRead", "BufNewFile" }, {
     callback = function()
         -- Only enable for regular files (not welcome screen)
         if vim.bo.filetype ~= "welcome" then
