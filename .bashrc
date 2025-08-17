@@ -21,7 +21,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 PS1='[\u@\h \W]\$ '
 
-gclone() {
+clone() {
     mkdir -p ~/cloned
     cd ~/cloned || return
     git clone "$1"
