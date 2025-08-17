@@ -20,3 +20,12 @@ alias n="nvim"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 PS1='[\u@\h \W]\$ '
+
+clone() {
+    cd ~/cloned || return
+    git clone "$1"          # $1 is the URL you pass in
+    if [ -n "$1" ]; then
+        repo_name=$(basename "$1" .git)
+        cd "$repo_name" || return
+    fi
+}
