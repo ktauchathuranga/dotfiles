@@ -21,11 +21,14 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 PS1='[\u@\h \W]\$ '
 
-clone() {
+gclone() {
+    mkdir -p ~/cloned
     cd ~/cloned || return
-    git clone "$1"          # $1 is the URL you pass in
+    git clone "$1"
+
     if [ -n "$1" ]; then
         repo_name=$(basename "$1" .git)
         cd "$repo_name" || return
     fi
 }
+
