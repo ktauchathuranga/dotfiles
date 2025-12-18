@@ -16,6 +16,9 @@ restore-session=false
 restore-window-size=false
 window-size=(uint32 80, uint32 24)
 
+[org/gnome/Showtime/State]
+is-maximized=false
+
 [org/gnome/TextEditor]
 last-save-directory='file:///home/ktauchathuranga/Documents'
 
@@ -53,8 +56,8 @@ translate=true
 [org/gnome/desktop/background]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///usr/share/backgrounds/f43/default/f43.xml'
-picture-uri-dark='file:///usr/share/backgrounds/f43/default/f43.xml'
+picture-uri='file:///home/ktauchathuranga/.config/background'
+picture-uri-dark='file:///home/ktauchathuranga/.config/background'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -71,7 +74,10 @@ show-battery-percentage=true
 toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
-application-children=['org-mozilla-firefox', 'gnome-about-panel', 'org-freedesktop-problems-applet', 'gnome-power-panel', 'org-gnome-software', 'org-gnome-ptyxis', 'org-gnome-nautilus']
+application-children=['org-mozilla-firefox', 'gnome-about-panel', 'org-freedesktop-problems-applet', 'gnome-power-panel', 'org-gnome-software', 'org-gnome-ptyxis', 'org-gnome-nautilus', 'code', 'org-gnome-showtime']
+
+[org/gnome/desktop/notifications/application/code]
+application-id='code.desktop'
 
 [org/gnome/desktop/notifications/application/gnome-about-panel]
 application-id='gnome-about-panel.desktop'
@@ -87,6 +93,9 @@ application-id='org.gnome.Nautilus.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-ptyxis]
 application-id='org.gnome.Ptyxis.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-showtime]
+application-id='org.gnome.Showtime.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-software]
 application-id='org.gnome.Software.desktop'
@@ -115,10 +124,17 @@ secondary-color='#000000000000'
 [org/gnome/desktop/search-providers]
 sort-order=['org.gnome.Settings.desktop', 'org.gnome.Contacts.desktop', 'org.gnome.Nautilus.desktop']
 
+[org/gnome/desktop/sound]
+event-sounds=true
+theme-name='__custom'
+
 [org/gnome/desktop/wm/keybindings]
 close=['<Super>c']
 move-to-workspace-left=['<Shift><Control>Left']
 move-to-workspace-right=['<Shift><Control>Right']
+switch-windows=['<Super>w']
+switch-windows-backward=['<Shift><Super>w']
+toggle-fullscreen=['<Super>f']
 
 [org/gnome/evolution-data-server]
 migrated=true
@@ -170,7 +186,9 @@ night-light-schedule-automatic=false
 donation-reminder-last-shown=int64 1765982938627396
 
 [org/gnome/settings-daemon/plugins/media-keys]
-custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/']
+control-center=['<Super>s']
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/']
+search=['<Super>r']
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
 binding='<Super>Return'
@@ -192,13 +210,27 @@ binding='<Shift><Super>b'
 command='firefox --private-window'
 name='Browser (incognito)'
 
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4]
+binding='<Super>q'
+command='ptyxis --new-window'
+name='Terminal'
+
+[org/gnome/settings-daemon/plugins/power]
+sleep-inactive-ac-timeout=7200
+sleep-inactive-ac-type='suspend'
+sleep-inactive-battery-timeout=1800
+
 [org/gnome/shell]
 app-picker-layout=[{'org.fedoraproject.MediaWriter.desktop': <{'position': <0>}>, 'org.gnome.Contacts.desktop': <{'position': <1>}>, 'org.gnome.Weather.desktop': <{'position': <2>}>, 'org.gnome.clocks.desktop': <{'position': <3>}>, 'org.gnome.Maps.desktop': <{'position': <4>}>, 'org.gnome.SimpleScan.desktop': <{'position': <5>}>, 'org.gnome.Settings.desktop': <{'position': <6>}>, 'org.gnome.Boxes.desktop': <{'position': <7>}>, 'org.gnome.Showtime.desktop': <{'position': <8>}>, 'libreoffice-calc.desktop': <{'position': <9>}>, 'org.gnome.Snapshot.desktop': <{'position': <10>}>, 'org.gnome.Characters.desktop': <{'position': <11>}>, 'Utilities': <{'position': <12>}>, 'System': <{'position': <13>}>, 'libreoffice-impress.desktop': <{'position': <14>}>, 'org.gnome.Tour.desktop': <{'position': <15>}>, 'org.gnome.Yelp.desktop': <{'position': <16>}>, 'libreoffice-writer.desktop': <{'position': <17>}>, 'org.gnome.Ptyxis.desktop': <{'position': <18>}>}]
+command-history=['bash -l -c "code"']
 enabled-extensions=['background-logo@fedorahosted.org', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com']
 welcome-dialog-last-shown-version='49.1'
 
 [org/gnome/shell/app-switcher]
 current-workspace-only=false
+
+[org/gnome/shell/keybindings]
+toggle-quick-settings=@as []
 
 [org/gnome/shell/world-clocks]
 locations=@av []
@@ -219,6 +251,18 @@ sort-directories-first=false
 
 [org/gtk/settings/file-chooser]
 clock-format='24h'
+date-format='regular'
+location-mode='path-bar'
+show-hidden=false
+show-size-column=true
+show-type-column=true
+sidebar-width=167
+sort-column='name'
+sort-directories-first=false
+sort-order='ascending'
+type-format='category'
+window-position=(26, 23)
+window-size=(1231, 902)
 
 [system/proxy]
 mode='none'
