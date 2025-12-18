@@ -22,6 +22,11 @@ is-maximized=false
 [org/gnome/TextEditor]
 last-save-directory='file:///home/ktauchathuranga/Documents'
 
+[org/gnome/calendar]
+active-view='month'
+window-maximized=true
+window-size=(768, 600)
+
 [org/gnome/control-center]
 last-panel='keyboard'
 window-state=(980, 640, false)
@@ -74,7 +79,7 @@ show-battery-percentage=true
 toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
-application-children=['org-mozilla-firefox', 'gnome-about-panel', 'org-freedesktop-problems-applet', 'gnome-power-panel', 'org-gnome-software', 'org-gnome-ptyxis', 'org-gnome-nautilus', 'code', 'org-gnome-showtime']
+application-children=['org-mozilla-firefox', 'gnome-about-panel', 'org-freedesktop-problems-applet', 'gnome-power-panel', 'org-gnome-software', 'org-gnome-ptyxis', 'org-gnome-nautilus', 'code', 'org-gnome-showtime', 'vlc']
 
 [org/gnome/desktop/notifications/application/code]
 application-id='code.desktop'
@@ -103,6 +108,9 @@ application-id='org.gnome.Software.desktop'
 [org/gnome/desktop/notifications/application/org-mozilla-firefox]
 application-id='org.mozilla.firefox.desktop'
 
+[org/gnome/desktop/notifications/application/vlc]
+application-id='vlc.desktop'
+
 [org/gnome/desktop/peripherals/mouse]
 accel-profile='flat'
 speed=0.0
@@ -129,12 +137,16 @@ event-sounds=true
 theme-name='__custom'
 
 [org/gnome/desktop/wm/keybindings]
+begin-move=['<Super>z']
 close=['<Super>c']
 move-to-workspace-left=['<Shift><Control>Left']
 move-to-workspace-right=['<Shift><Control>Right']
 switch-windows=['<Super>w']
 switch-windows-backward=['<Shift><Super>w']
 toggle-fullscreen=['<Super>f']
+
+[org/gnome/desktop/wm/preferences]
+focus-mode='sloppy'
 
 [org/gnome/evolution-data-server]
 migrated=true
