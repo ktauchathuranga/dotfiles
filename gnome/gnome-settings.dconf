@@ -28,7 +28,7 @@ window-maximized=true
 window-size=(768, 600)
 
 [org/gnome/control-center]
-last-panel='keyboard'
+last-panel='applications'
 window-state=(980, 640, false)
 
 [org/gnome/desktop/a11y/magnifier]
@@ -104,6 +104,9 @@ application-id='org.gnome.Showtime.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-software]
 application-id='org.gnome.Software.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-tour]
+enable=false
 
 [org/gnome/desktop/notifications/application/org-mozilla-firefox]
 application-id='org.mozilla.firefox.desktop'
@@ -248,11 +251,12 @@ toggle-quick-settings=@as []
 locations=@av []
 
 [org/gnome/software]
-check-timestamp=int64 1766026183
+check-timestamp=int64 1766118014
 first-run=false
-flatpak-purge-timestamp=int64 1766034419
+flatpak-purge-timestamp=int64 1766117903
+install-timestamp=int64 1766051730
 security-timestamp=int64 1766026186330092
-update-notification-timestamp=int64 1766026884
+update-notification-timestamp=int64 1766118015
 
 [org/gnome/system/location]
 enabled=false
