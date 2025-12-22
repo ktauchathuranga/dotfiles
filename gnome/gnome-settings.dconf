@@ -1,6 +1,10 @@
 [org/freedesktop/folks]
 primary-store='eds:a1d455797e9fc3b490d2ccea995b49c86d6e52e2'
 
+[org/gnome/Connections]
+first-run=false
+window-size=(1024, 768)
+
 [org/gnome/Contacts]
 did-initial-setup=true
 window-fullscreen=false
@@ -28,7 +32,7 @@ window-maximized=true
 window-size=(768, 600)
 
 [org/gnome/control-center]
-last-panel='system'
+last-panel='power'
 window-state=(980, 640, false)
 
 [org/gnome/desktop/a11y/magnifier]
@@ -79,7 +83,7 @@ show-battery-percentage=true
 toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
-application-children=['org-mozilla-firefox', 'gnome-about-panel', 'org-freedesktop-problems-applet', 'gnome-power-panel', 'org-gnome-software', 'org-gnome-ptyxis', 'org-gnome-nautilus', 'code', 'org-gnome-showtime', 'vlc']
+application-children=['org-mozilla-firefox', 'gnome-about-panel', 'org-freedesktop-problems-applet', 'gnome-power-panel', 'org-gnome-software', 'org-gnome-ptyxis', 'org-gnome-nautilus', 'code', 'org-gnome-showtime', 'vlc', 'org-gnome-decibels']
 
 [org/gnome/desktop/notifications/application/code]
 application-id='code.desktop'
@@ -92,6 +96,9 @@ application-id='gnome-power-panel.desktop'
 
 [org/gnome/desktop/notifications/application/org-freedesktop-problems-applet]
 application-id='org.freedesktop.problems.applet.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-decibels]
+application-id='org.gnome.Decibels.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-nautilus]
 application-id='org.gnome.Nautilus.desktop'
@@ -145,6 +152,7 @@ begin-move=['<Super>z']
 close=['<Super>c']
 move-to-workspace-left=['<Shift><Control>Left']
 move-to-workspace-right=['<Shift><Control>Right']
+show-desktop=['<Super>d']
 switch-windows=['<Super>w']
 switch-windows-backward=['<Shift><Super>w']
 toggle-fullscreen=['<Super>f']
@@ -188,6 +196,19 @@ ignore-phase2-ca-cert=false
 [org/gnome/nm-applet/eap/ff1c9724-1af3-4040-9fc9-6ff81b4b3b2b]
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
+
+[org/gnome/papers]
+night-mode=false
+
+[org/gnome/papers/default]
+annot-color='yellow'
+continuous=true
+dual-page=false
+dual-page-odd-left=false
+enable-spellchecking=true
+show-sidebar=true
+sizing-mode='automatic'
+window-height=1048
 
 [org/gnome/portal/filechooser/org.gnome.Nautilus]
 last-folder-path='/run/media/ktauchathuranga/Cupcake/pi'
@@ -236,7 +257,7 @@ name='Terminal'
 
 [org/gnome/settings-daemon/plugins/power]
 sleep-inactive-ac-timeout=7200
-sleep-inactive-ac-type='suspend'
+sleep-inactive-ac-type='nothing'
 sleep-inactive-battery-timeout=1800
 
 [org/gnome/shell]
@@ -256,9 +277,9 @@ toggle-quick-settings=@as []
 locations=@av []
 
 [org/gnome/software]
-check-timestamp=int64 1766281279
+check-timestamp=int64 1766381748
 first-run=false
-flatpak-purge-timestamp=int64 1766276608
+flatpak-purge-timestamp=int64 1766368827
 install-timestamp=int64 1766051730
 security-timestamp=int64 1766026186330092
 update-notification-timestamp=int64 1766118015
