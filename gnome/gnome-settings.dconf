@@ -37,7 +37,7 @@ window-maximized=true
 window-size=(768, 600)
 
 [org/gnome/control-center]
-last-panel='sharing'
+last-panel='wellbeing'
 window-state=(980, 640, false)
 
 [org/gnome/desktop/a11y/magnifier]
