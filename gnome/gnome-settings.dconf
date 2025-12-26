@@ -1,3 +1,7 @@
+[org/fedorahosted/background-logo-extension]
+logo-position='bottom-right'
+logo-size=5.0
+
 [org/freedesktop/folks]
 primary-store='eds:a1d455797e9fc3b490d2ccea995b49c86d6e52e2'
 
@@ -37,7 +41,7 @@ window-maximized=true
 window-size=(768, 600)
 
 [org/gnome/control-center]
-last-panel='wellbeing'
+last-panel='bluetooth'
 window-state=(980, 640, false)
 
 [org/gnome/desktop/a11y/magnifier]
@@ -102,7 +106,7 @@ show-battery-percentage=true
 toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
-application-children=['org-mozilla-firefox', 'gnome-about-panel', 'org-freedesktop-problems-applet', 'gnome-power-panel', 'org-gnome-software', 'org-gnome-ptyxis', 'org-gnome-nautilus', 'code', 'org-gnome-showtime', 'vlc', 'org-gnome-decibels', 'org-gnome-characters']
+application-children=['org-mozilla-firefox', 'gnome-about-panel', 'org-freedesktop-problems-applet', 'gnome-power-panel', 'org-gnome-software', 'org-gnome-ptyxis', 'org-gnome-nautilus', 'code', 'org-gnome-showtime', 'vlc', 'org-gnome-decibels', 'org-gnome-characters', 'libreoffice-writer']
 
 [org/gnome/desktop/notifications/application/code]
 application-id='code.desktop'
@@ -112,6 +116,9 @@ application-id='gnome-about-panel.desktop'
 
 [org/gnome/desktop/notifications/application/gnome-power-panel]
 application-id='gnome-power-panel.desktop'
+
+[org/gnome/desktop/notifications/application/libreoffice-writer]
+application-id='libreoffice-writer.desktop'
 
 [org/gnome/desktop/notifications/application/org-freedesktop-problems-applet]
 application-id='org.freedesktop.problems.applet.desktop'
@@ -188,6 +195,18 @@ migrated=true
 [org/gnome/evolution]
 default-address-book='a1d455797e9fc3b490d2ccea995b49c86d6e52e2'
 
+[org/gnome/gnome-system-monitor]
+current-tab='resources'
+maximized=false
+show-dependencies=false
+show-whose-processes='user'
+window-height=720
+window-width=800
+
+[org/gnome/gnome-system-monitor/proctree]
+col-26-visible=false
+col-26-width=0
+
 [org/gnome/login-screen]
 enable-fingerprint-authentication=true
 enable-smartcard-authentication=false
@@ -226,7 +245,7 @@ night-mode=false
 annot-color='yellow'
 continuous=true
 dual-page=false
-dual-page-odd-left=false
+dual-page-odd-left=true
 enable-spellchecking=true
 show-sidebar=true
 sizing-mode='automatic'
@@ -284,13 +303,19 @@ sleep-inactive-battery-timeout=1800
 
 [org/gnome/shell]
 app-picker-layout=[{'org.fedoraproject.MediaWriter.desktop': <{'position': <0>}>, 'org.gnome.Contacts.desktop': <{'position': <1>}>, 'org.gnome.Weather.desktop': <{'position': <2>}>, 'org.gnome.clocks.desktop': <{'position': <3>}>, 'org.gnome.Maps.desktop': <{'position': <4>}>, 'org.gnome.SimpleScan.desktop': <{'position': <5>}>, 'org.gnome.Settings.desktop': <{'position': <6>}>, 'org.gnome.Boxes.desktop': <{'position': <7>}>, 'org.gnome.Showtime.desktop': <{'position': <8>}>, 'libreoffice-calc.desktop': <{'position': <9>}>, 'org.gnome.Snapshot.desktop': <{'position': <10>}>, 'org.gnome.Characters.desktop': <{'position': <11>}>, 'Utilities': <{'position': <12>}>, 'System': <{'position': <13>}>, 'libreoffice-impress.desktop': <{'position': <14>}>, 'org.gnome.Tour.desktop': <{'position': <15>}>, 'org.gnome.Yelp.desktop': <{'position': <16>}>, 'libreoffice-writer.desktop': <{'position': <17>}>, 'org.gnome.Ptyxis.desktop': <{'position': <18>}>}]
-command-history=['bash -l -c "code"']
-enabled-extensions=['background-logo@fedorahosted.org', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'gnomebedtime@ionutbortis.gmail.com']
+command-history=['bash -l -c "code"', 'r']
+disable-user-extensions=false
+disabled-extensions=['apps-menu@gnome-shell-extensions.gcampax.github.com', 'background-logo@fedorahosted.org', 'window-list@gnome-shell-extensions.gcampax.github.com']
+enabled-extensions=['launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'gnomebedtime@ionutbortis.gmail.com', 'monochrome-toggle@ktauchathuranga@gmail.com', 'achroma@ktauchathuranga@gmail.com', 'places-menu@gnome-shell-extensions.gcampax.github.com']
+favorite-apps=['org.mozilla.firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.TextEditor.desktop', 'org.gnome.Calculator.desktop']
 last-selected-power-profile='power-saver'
 welcome-dialog-last-shown-version='49.1'
 
 [org/gnome/shell/app-switcher]
 current-workspace-only=false
+
+[org/gnome/shell/extensions/achroma]
+current-profile='grayscale'
 
 [org/gnome/shell/extensions/bedtime-mode]
 bedtime-mode-active=false
@@ -302,9 +327,9 @@ toggle-quick-settings=@as []
 locations=@av []
 
 [org/gnome/software]
-check-timestamp=int64 1766460542
+check-timestamp=int64 1766720770
 first-run=false
-flatpak-purge-timestamp=int64 1766453571
+flatpak-purge-timestamp=int64 1766728228
 install-timestamp=int64 1766051730
 security-timestamp=int64 1766026186330092
 update-notification-timestamp=int64 1766118015
