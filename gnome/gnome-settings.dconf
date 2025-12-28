@@ -5,6 +5,9 @@ logo-size=5.0
 [org/freedesktop/folks]
 primary-store='eds:a1d455797e9fc3b490d2ccea995b49c86d6e52e2'
 
+[org/gnome/Characters]
+recent-characters=['🍃']
+
 [org/gnome/Connections]
 first-run=false
 window-size=(1024, 768)
@@ -41,7 +44,7 @@ window-maximized=true
 window-size=(768, 600)
 
 [org/gnome/control-center]
-last-panel='bluetooth'
+last-panel='sharing'
 window-state=(980, 640, false)
 
 [org/gnome/desktop/a11y/magnifier]
@@ -90,6 +93,9 @@ play-sound=true
 [org/gnome/desktop/datetime]
 automatic-timezone=true
 
+[org/gnome/desktop/file-sharing]
+require-password='always'
+
 [org/gnome/desktop/input-sources]
 current=uint32 0
 sources=[('xkb', 'us')]
@@ -106,7 +112,7 @@ show-battery-percentage=true
 toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
-application-children=['org-mozilla-firefox', 'gnome-about-panel', 'org-freedesktop-problems-applet', 'gnome-power-panel', 'org-gnome-software', 'org-gnome-ptyxis', 'org-gnome-nautilus', 'code', 'org-gnome-showtime', 'vlc', 'org-gnome-decibels', 'org-gnome-characters', 'libreoffice-writer']
+application-children=['org-mozilla-firefox', 'gnome-about-panel', 'org-freedesktop-problems-applet', 'gnome-power-panel', 'org-gnome-software', 'org-gnome-ptyxis', 'org-gnome-nautilus', 'code', 'org-gnome-showtime', 'vlc', 'org-gnome-decibels', 'org-gnome-characters', 'libreoffice-writer', 'org-gnome-extensions']
 
 [org/gnome/desktop/notifications/application/code]
 application-id='code.desktop'
@@ -128,6 +134,9 @@ application-id='org.gnome.Characters.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-decibels]
 application-id='org.gnome.Decibels.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-extensions]
+application-id='org.gnome.Extensions.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-nautilus]
 application-id='org.gnome.Nautilus.desktop'
@@ -301,14 +310,20 @@ sleep-inactive-ac-timeout=7200
 sleep-inactive-ac-type='nothing'
 sleep-inactive-battery-timeout=1800
 
+[org/gnome/settings-daemon/plugins/sharing/gnome-user-share-webdav]
+enabled-connections=@as []
+
+[org/gnome/settings-daemon/plugins/sharing/rygel]
+enabled-connections=@as []
+
 [org/gnome/shell]
-app-picker-layout=[{'org.fedoraproject.MediaWriter.desktop': <{'position': <0>}>, 'org.gnome.Contacts.desktop': <{'position': <1>}>, 'org.gnome.Weather.desktop': <{'position': <2>}>, 'org.gnome.clocks.desktop': <{'position': <3>}>, 'org.gnome.Maps.desktop': <{'position': <4>}>, 'org.gnome.SimpleScan.desktop': <{'position': <5>}>, 'org.gnome.Settings.desktop': <{'position': <6>}>, 'org.gnome.Boxes.desktop': <{'position': <7>}>, 'org.gnome.Showtime.desktop': <{'position': <8>}>, 'libreoffice-calc.desktop': <{'position': <9>}>, 'org.gnome.Snapshot.desktop': <{'position': <10>}>, 'org.gnome.Characters.desktop': <{'position': <11>}>, 'Utilities': <{'position': <12>}>, 'System': <{'position': <13>}>, 'libreoffice-impress.desktop': <{'position': <14>}>, 'org.gnome.Tour.desktop': <{'position': <15>}>, 'org.gnome.Yelp.desktop': <{'position': <16>}>, 'libreoffice-writer.desktop': <{'position': <17>}>, 'org.gnome.Ptyxis.desktop': <{'position': <18>}>}]
+app-picker-layout=[{'org.fedoraproject.MediaWriter.desktop': <{'position': <0>}>, 'org.gnome.Contacts.desktop': <{'position': <1>}>, 'org.gnome.clocks.desktop': <{'position': <2>}>, 'org.gnome.Maps.desktop': <{'position': <3>}>, 'org.gnome.SimpleScan.desktop': <{'position': <4>}>, 'org.gnome.Settings.desktop': <{'position': <5>}>, 'org.gnome.Boxes.desktop': <{'position': <6>}>, 'org.gnome.Calendar.desktop': <{'position': <7>}>, 'org.gnome.Showtime.desktop': <{'position': <8>}>, 'libreoffice-calc.desktop': <{'position': <9>}>, 'org.gnome.Snapshot.desktop': <{'position': <10>}>, 'org.gnome.Characters.desktop': <{'position': <11>}>, 'Utilities': <{'position': <12>}>, 'System': <{'position': <13>}>, 'libreoffice-impress.desktop': <{'position': <14>}>, 'org.gnome.Extensions.desktop': <{'position': <15>}>, 'org.gnome.Yelp.desktop': <{'position': <16>}>, 'libreoffice-writer.desktop': <{'position': <17>}>, 'org.gnome.Ptyxis.desktop': <{'position': <18>}>, 'gpredict.desktop': <{'position': <19>}>, 'org.kicad.kicad.desktop': <{'position': <20>}>, 'org.kicad.gerbview.desktop': <{'position': <21>}>, 'org.kicad.bitmap2component.desktop': <{'position': <22>}>, 'org.kicad.pcbcalculator.desktop': <{'position': <23>}>}, {'org.kicad.pcbnew.desktop': <{'position': <0>}>, 'org.kicad.eeschema.desktop': <{'position': <1>}>, 'mpv.desktop': <{'position': <2>}>, 'opencascade-draw.desktop': <{'position': <3>}>, 'org.raspberrypi.rpi-imager.desktop': <{'position': <4>}>, 'sdrpp.desktop': <{'position': <5>}>, 'org.gnome.Software.desktop': <{'position': <6>}>, 'vncviewer.desktop': <{'position': <7>}>, 'urh.desktop': <{'position': <8>}>, 'code.desktop': <{'position': <9>}>, 'vlc.desktop': <{'position': <10>}>}]
 command-history=['bash -l -c "code"', 'r']
 disable-user-extensions=false
 disabled-extensions=['apps-menu@gnome-shell-extensions.gcampax.github.com', 'background-logo@fedorahosted.org', 'window-list@gnome-shell-extensions.gcampax.github.com']
-enabled-extensions=['launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'gnomebedtime@ionutbortis.gmail.com', 'monochrome-toggle@ktauchathuranga@gmail.com', 'achroma@ktauchathuranga@gmail.com', 'places-menu@gnome-shell-extensions.gcampax.github.com']
+enabled-extensions=['launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'gnomebedtime@ionutbortis.gmail.com', 'monochrome-toggle@ktauchathuranga@gmail.com', 'achroma@ktauchathuranga@gmail.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'achroma@ktauchathuranga.github.io']
 favorite-apps=['org.mozilla.firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.TextEditor.desktop', 'org.gnome.Calculator.desktop']
-last-selected-power-profile='power-saver'
+last-selected-power-profile='performance'
 welcome-dialog-last-shown-version='49.1'
 
 [org/gnome/shell/app-switcher]
@@ -327,9 +342,9 @@ toggle-quick-settings=@as []
 locations=@av []
 
 [org/gnome/software]
-check-timestamp=int64 1766720770
+check-timestamp=int64 1766889756
 first-run=false
-flatpak-purge-timestamp=int64 1766728228
+flatpak-purge-timestamp=int64 1766889648
 install-timestamp=int64 1766051730
 security-timestamp=int64 1766026186330092
 update-notification-timestamp=int64 1766118015
