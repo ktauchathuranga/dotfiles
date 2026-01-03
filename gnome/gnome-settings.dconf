@@ -28,7 +28,7 @@ restore-window-size=false
 window-size=(uint32 80, uint32 24)
 
 [org/gnome/Showtime/State]
-is-maximized=false
+is-maximized=true
 
 [org/gnome/TextEditor]
 last-save-directory='file:///home/ktauchathuranga/Documents'
@@ -38,13 +38,22 @@ active-chart='rings'
 is-maximized=false
 window-size=(960, 600)
 
+[org/gnome/calculator]
+base=10
+button-mode='basic'
+source-units=['degree']
+target-units=['radian']
+unit-category='angle'
+window-maximized=false
+window-size=(360, 616)
+
 [org/gnome/calendar]
 active-view='month'
 window-maximized=true
 window-size=(768, 600)
 
 [org/gnome/control-center]
-last-panel='sharing'
+last-panel='wifi'
 window-state=(980, 640, false)
 
 [org/gnome/desktop/a11y/magnifier]
@@ -105,14 +114,14 @@ accent-color='purple'
 clock-format='24h'
 clock-show-seconds=false
 clock-show-weekday=true
-color-scheme='prefer-dark'
+color-scheme='default'
 enable-animations=true
 enable-hot-corners=false
 show-battery-percentage=true
 toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
-application-children=['org-mozilla-firefox', 'gnome-about-panel', 'org-freedesktop-problems-applet', 'gnome-power-panel', 'org-gnome-software', 'org-gnome-ptyxis', 'org-gnome-nautilus', 'code', 'org-gnome-showtime', 'vlc', 'org-gnome-decibels', 'org-gnome-characters', 'libreoffice-writer', 'org-gnome-extensions']
+application-children=['org-mozilla-firefox', 'gnome-about-panel', 'org-freedesktop-problems-applet', 'gnome-power-panel', 'org-gnome-software', 'org-gnome-ptyxis', 'org-gnome-nautilus', 'code', 'org-gnome-showtime', 'vlc', 'org-gnome-decibels', 'org-gnome-characters', 'libreoffice-writer', 'org-gnome-extensions', 'org-kicad-eeschema', 'org-kicad-kicad']
 
 [org/gnome/desktop/notifications/application/code]
 application-id='code.desktop'
@@ -152,6 +161,12 @@ application-id='org.gnome.Software.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-tour]
 enable=false
+
+[org/gnome/desktop/notifications/application/org-kicad-eeschema]
+application-id='org.kicad.eeschema.desktop'
+
+[org/gnome/desktop/notifications/application/org-kicad-kicad]
+application-id='org.kicad.kicad.desktop'
 
 [org/gnome/desktop/notifications/application/org-mozilla-firefox]
 application-id='org.mozilla.firefox.desktop'
@@ -317,11 +332,11 @@ enabled-connections=@as []
 enabled-connections=@as []
 
 [org/gnome/shell]
-app-picker-layout=[{'org.fedoraproject.MediaWriter.desktop': <{'position': <0>}>, 'org.gnome.Contacts.desktop': <{'position': <1>}>, 'org.gnome.clocks.desktop': <{'position': <2>}>, 'org.gnome.Maps.desktop': <{'position': <3>}>, 'org.gnome.SimpleScan.desktop': <{'position': <4>}>, 'org.gnome.Settings.desktop': <{'position': <5>}>, 'org.gnome.Boxes.desktop': <{'position': <6>}>, 'org.gnome.Calendar.desktop': <{'position': <7>}>, 'org.gnome.Showtime.desktop': <{'position': <8>}>, 'libreoffice-calc.desktop': <{'position': <9>}>, 'org.gnome.Snapshot.desktop': <{'position': <10>}>, 'org.gnome.Characters.desktop': <{'position': <11>}>, 'Utilities': <{'position': <12>}>, 'System': <{'position': <13>}>, 'libreoffice-impress.desktop': <{'position': <14>}>, 'org.gnome.Extensions.desktop': <{'position': <15>}>, 'org.gnome.Yelp.desktop': <{'position': <16>}>, 'libreoffice-writer.desktop': <{'position': <17>}>, 'org.gnome.Ptyxis.desktop': <{'position': <18>}>, 'gpredict.desktop': <{'position': <19>}>, 'org.kicad.kicad.desktop': <{'position': <20>}>, 'org.kicad.gerbview.desktop': <{'position': <21>}>, 'org.kicad.bitmap2component.desktop': <{'position': <22>}>, 'org.kicad.pcbcalculator.desktop': <{'position': <23>}>}, {'org.kicad.pcbnew.desktop': <{'position': <0>}>, 'org.kicad.eeschema.desktop': <{'position': <1>}>, 'mpv.desktop': <{'position': <2>}>, 'opencascade-draw.desktop': <{'position': <3>}>, 'org.raspberrypi.rpi-imager.desktop': <{'position': <4>}>, 'sdrpp.desktop': <{'position': <5>}>, 'org.gnome.Software.desktop': <{'position': <6>}>, 'vncviewer.desktop': <{'position': <7>}>, 'urh.desktop': <{'position': <8>}>, 'code.desktop': <{'position': <9>}>, 'vlc.desktop': <{'position': <10>}>}]
+app-picker-layout=[{'org.fedoraproject.MediaWriter.desktop': <{'position': <0>}>, 'org.gnome.Contacts.desktop': <{'position': <1>}>, 'org.gnome.clocks.desktop': <{'position': <2>}>, 'org.gnome.Maps.desktop': <{'position': <3>}>, 'org.gnome.SimpleScan.desktop': <{'position': <4>}>, 'org.gnome.Settings.desktop': <{'position': <5>}>, 'org.gnome.Boxes.desktop': <{'position': <6>}>, 'org.gnome.Calendar.desktop': <{'position': <7>}>, 'org.gnome.Showtime.desktop': <{'position': <8>}>, 'libreoffice-calc.desktop': <{'position': <9>}>, 'org.gnome.Snapshot.desktop': <{'position': <10>}>, 'Utilities': <{'position': <11>}>, 'System': <{'position': <12>}>, 'org.gnome.Extensions.desktop': <{'position': <13>}>, 'org.gnome.Characters.desktop': <{'position': <14>}>, 'org.gnome.Yelp.desktop': <{'position': <15>}>, 'libreoffice-writer.desktop': <{'position': <16>}>, 'org.gnome.Ptyxis.desktop': <{'position': <17>}>, 'gpredict.desktop': <{'position': <18>}>, 'org.kicad.kicad.desktop': <{'position': <19>}>, 'org.kicad.gerbview.desktop': <{'position': <20>}>, 'org.kicad.bitmap2component.desktop': <{'position': <21>}>, 'org.kicad.pcbcalculator.desktop': <{'position': <22>}>}, {'libreoffice-impress.desktop': <{'position': <0>}>, 'org.kicad.pcbnew.desktop': <{'position': <1>}>, 'org.kicad.eeschema.desktop': <{'position': <2>}>, 'mpv.desktop': <{'position': <3>}>, 'opencascade-draw.desktop': <{'position': <4>}>, 'org.raspberrypi.rpi-imager.desktop': <{'position': <5>}>, 'sdrpp.desktop': <{'position': <6>}>, 'org.gnome.Software.desktop': <{'position': <7>}>, 'vncviewer.desktop': <{'position': <8>}>, 'urh.desktop': <{'position': <9>}>, 'code.desktop': <{'position': <10>}>, 'vlc.desktop': <{'position': <11>}>, 'dk.gqrx.gqrx.desktop': <{'position': <12>}>, 'com.simulide.simulide.desktop': <{'position': <13>}>}]
 command-history=['bash -l -c "code"', 'r']
 disable-user-extensions=false
-disabled-extensions=['apps-menu@gnome-shell-extensions.gcampax.github.com', 'background-logo@fedorahosted.org', 'window-list@gnome-shell-extensions.gcampax.github.com']
-enabled-extensions=['launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'gnomebedtime@ionutbortis.gmail.com', 'monochrome-toggle@ktauchathuranga@gmail.com', 'achroma@ktauchathuranga@gmail.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'achroma@ktauchathuranga.github.io']
+disabled-extensions=['apps-menu@gnome-shell-extensions.gcampax.github.com', 'background-logo@fedorahosted.org', 'window-list@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com']
+enabled-extensions=['launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'gnomebedtime@ionutbortis.gmail.com', 'monochrome-toggle@ktauchathuranga@gmail.com', 'achroma@ktauchathuranga@gmail.com', 'achroma@ktauchathuranga.github.io']
 favorite-apps=['org.mozilla.firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.TextEditor.desktop', 'org.gnome.Calculator.desktop']
 last-selected-power-profile='performance'
 welcome-dialog-last-shown-version='49.1'
@@ -331,6 +346,9 @@ current-workspace-only=false
 
 [org/gnome/shell/extensions/achroma]
 current-profile='grayscale'
+custom-profiles='[]'
+is-previewing=false
+preview-profile='{"factor":1,"brightness":0,"contrast":0,"tint":null}'
 
 [org/gnome/shell/extensions/bedtime-mode]
 bedtime-mode-active=false
@@ -342,9 +360,9 @@ toggle-quick-settings=@as []
 locations=@av []
 
 [org/gnome/software]
-check-timestamp=int64 1766889756
+check-timestamp=int64 1767324723
 first-run=false
-flatpak-purge-timestamp=int64 1766889648
+flatpak-purge-timestamp=int64 1767321022
 install-timestamp=int64 1766051730
 security-timestamp=int64 1766026186330092
 update-notification-timestamp=int64 1766118015
@@ -355,9 +373,16 @@ enabled=false
 [org/gnome/tweaks]
 show-extensions-notice=false
 
+[org/gtk/gtk4/settings/color-chooser]
+custom-colors=[(1.0, 0.86274510622024536, 0.70588237047195435, 1.0)]
+selected-color=(true, 0.87843137979507446, 0.10588235408067703, 0.14117647707462311, 1.0)
+
 [org/gtk/gtk4/settings/file-chooser]
 show-hidden=false
 sort-directories-first=false
+
+[org/gtk/settings/color-chooser]
+selected-color=(true, 0.8784313725490196, 0.10588235294117647, 0.14117647058823529, 1.0)
 
 [org/gtk/settings/file-chooser]
 clock-format='24h'
@@ -367,9 +392,9 @@ show-hidden=false
 show-size-column=true
 show-type-column=true
 sidebar-width=167
-sort-column='name'
+sort-column='modified'
 sort-directories-first=false
-sort-order='ascending'
+sort-order='descending'
 type-format='category'
 window-position=(26, 23)
 window-size=(1231, 902)
