@@ -52,8 +52,13 @@ active-view='month'
 window-maximized=true
 window-size=(768, 600)
 
+[org/gnome/clocks/state/window]
+maximized=false
+panel-id='stopwatch'
+size=(870, 690)
+
 [org/gnome/control-center]
-last-panel='wifi'
+last-panel='system'
 window-state=(980, 640, false)
 
 [org/gnome/desktop/a11y/magnifier]
@@ -114,7 +119,7 @@ accent-color='purple'
 clock-format='24h'
 clock-show-seconds=false
 clock-show-weekday=true
-color-scheme='default'
+color-scheme='prefer-dark'
 enable-animations=true
 enable-hot-corners=false
 show-battery-percentage=true
@@ -246,6 +251,10 @@ migrated-gtk-settings=true
 initial-size=(890, 550)
 initial-size-file-chooser=(890, 550)
 
+[org/gnome/nm-applet/eap/2d98db61-f9cd-38f7-874d-ee1560824bc2]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
 [org/gnome/nm-applet/eap/c118a034-0435-42bb-b512-f2a77b07cd33]
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
@@ -326,7 +335,7 @@ sleep-inactive-ac-type='nothing'
 sleep-inactive-battery-timeout=1800
 
 [org/gnome/settings-daemon/plugins/sharing/gnome-user-share-webdav]
-enabled-connections=@as []
+enabled-connections=['71583f94-982b-43bd-9e61-8306ddcfafc6']
 
 [org/gnome/settings-daemon/plugins/sharing/rygel]
 enabled-connections=@as []
@@ -360,12 +369,12 @@ toggle-quick-settings=@as []
 locations=@av []
 
 [org/gnome/software]
-check-timestamp=int64 1767324723
+check-timestamp=int64 1767674508
 first-run=false
-flatpak-purge-timestamp=int64 1767321022
+flatpak-purge-timestamp=int64 1767670673
 install-timestamp=int64 1766051730
 security-timestamp=int64 1766026186330092
-update-notification-timestamp=int64 1766118015
+update-notification-timestamp=int64 1767674516
 
 [org/gnome/system/location]
 enabled=false
@@ -391,7 +400,7 @@ location-mode='path-bar'
 show-hidden=false
 show-size-column=true
 show-type-column=true
-sidebar-width=167
+sidebar-width=196
 sort-column='modified'
 sort-directories-first=false
 sort-order='descending'
