@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Backup GNOME Settings & Bashrc Script
+# Backup GNOME Settings, Bashrc, and Gitconfig Script
 
 echo "Backing up configs..."
 
@@ -13,10 +13,16 @@ mkdir -p gnome
 dconf dump / > gnome/gnome-settings.dconf
 echo "   GNOME settings saved to gnome/gnome-settings.dconf"
 
-# --- Bashrc ---
-echo "2. Copying .bashrc..."
+# --- Dotfiles ---
+echo "2. Copying dotfiles..."
+
+# Backup .bashrc
 cp ~/.bashrc bashrc
 echo "   .bashrc saved to ./bashrc"
+
+# Backup .gitconfig
+cp ~/.gitconfig gitconfig
+echo "   .gitconfig saved to ./gitconfig"
 
 # --- Summary ---
 echo "------------------------------------------------"
@@ -25,5 +31,5 @@ echo "GNOME File size: $(du -h gnome/gnome-settings.dconf | cut -f1)"
 echo ""
 echo "You can now commit and push to GitHub:"
 echo "  git add ."
-echo "  git commit -m 'Update GNOME and bashrc settings'"
+echo "  git commit -m 'Update GNOME, bashrc, and gitconfig'"
 echo "  git push"

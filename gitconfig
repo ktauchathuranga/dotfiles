@@ -1,0 +1,21 @@
+[init]
+	defaultBranch = main
+[user]
+	name = Ashen Chathuranga
+	email = ktauchathuranga@gmail.com
+	signingkey = B445BAB440D018C41B97382889C1B9CEC176FC5B
+[commit]
+	gpgSign = true
+[alias]
+	ck = checkout
+	br = branch
+	st = status
+	sw = switch
+	lg = log --oneline --decorate --all --graph
+	ps = push
+	pl = pull
+	ad = add .
+	cm = commit -m
+	unstage = reset HEAD --
+	last = log -1 HEAD
+	cl = clone

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Restore GNOME Settings & Bashrc Script
+# Restore GNOME Settings, Bashrc, and Gitconfig Script
 
 echo "Restoring configs..."
 
@@ -12,22 +12,33 @@ else
     echo "Skipping GNOME: 'gnome/gnome-settings.dconf' not found."
 fi
 
-# --- Bashrc ---
-if [ -f "bashrc" ]; then
-    echo "2. Restoring .bashrc..."
+# --- Helper Function for Dotfiles ---
+restore_file() {
+    local source_file=$1
+    local dest_file=$2
     
-    # Safety: Backup the existing .bashrc on the machine before overwriting
-    if [ -f ~/.bashrc ]; then
-        cp ~/.bashrc ~/.bashrc.pre-restore-backup
-        echo "   (Safety backup of existing .bashrc saved to ~/.bashrc.pre-restore-backup)"
-    fi
+    if [ -f "$source_file" ]; then
+        echo "Restoring $dest_file..."
+        
+        # Safety: Backup the existing file on the machine before overwriting
+        if [ -f "$dest_file" ]; then
+            cp "$dest_file" "${dest_file}.pre-restore-backup"
+            echo "   (Safety backup saved to ${dest_file}.pre-restore-backup)"
+        fi
 
-    # Overwrite .bashrc
-    cp bashrc ~/.bashrc
-    echo "   ~/.bashrc updated."
-else
-    echo "Skipping bashrc: './bashrc' backup file not found."
-fi
+        # Overwrite file
+        cp "$source_file" "$dest_file"
+        echo "   $dest_file updated."
+    else
+        echo "Skipping $dest_file: '$source_file' backup file not found."
+    fi
+}
+
+# --- Restore Dotfiles ---
+echo "2. Restoring dotfiles..."
+
+restore_file "bashrc" "$HOME/.bashrc"
+restore_file "gitconfig" "$HOME/.gitconfig"
 
 echo "------------------------------------------------"
 echo "Restore complete!"
