@@ -58,7 +58,7 @@ panel-id='stopwatch'
 size=(870, 690)
 
 [org/gnome/control-center]
-last-panel='system'
+last-panel='power'
 window-state=(980, 640, false)
 
 [org/gnome/desktop/a11y/magnifier]
@@ -119,7 +119,7 @@ accent-color='purple'
 clock-format='24h'
 clock-show-seconds=false
 clock-show-weekday=true
-color-scheme='prefer-dark'
+color-scheme='default'
 enable-animations=true
 enable-hot-corners=false
 show-battery-percentage=true
@@ -369,9 +369,9 @@ toggle-quick-settings=@as []
 locations=@av []
 
 [org/gnome/software]
-check-timestamp=int64 1767674508
+check-timestamp=int64 1767754841
 first-run=false
-flatpak-purge-timestamp=int64 1767670673
+flatpak-purge-timestamp=int64 1767762237
 install-timestamp=int64 1766051730
 security-timestamp=int64 1766026186330092
 update-notification-timestamp=int64 1767674516
@@ -387,7 +387,7 @@ custom-colors=[(1.0, 0.86274510622024536, 0.70588237047195435, 1.0)]
 selected-color=(true, 0.87843137979507446, 0.10588235408067703, 0.14117647707462311, 1.0)
 
 [org/gtk/gtk4/settings/file-chooser]
-show-hidden=false
+show-hidden=true
 sort-directories-first=false
 
 [org/gtk/settings/color-chooser]
