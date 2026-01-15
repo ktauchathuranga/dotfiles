@@ -28,10 +28,15 @@ restore-window-size=false
 window-size=(uint32 80, uint32 24)
 
 [org/gnome/Showtime/State]
-is-maximized=true
+is-maximized=false
+
+[org/gnome/Snapshot]
+is-maximized=false
+window-height=640
+window-width=800
 
 [org/gnome/TextEditor]
-last-save-directory='file:///home/ktauchathuranga/Documents'
+last-save-directory='file:///home/ktauchathuranga'
 
 [org/gnome/baobab/ui]
 active-chart='rings'
@@ -58,8 +63,11 @@ panel-id='stopwatch'
 size=(870, 690)
 
 [org/gnome/control-center]
-last-panel='power'
+last-panel='wifi'
 window-state=(980, 640, false)
+
+[org/gnome/desktop/a11y/applications]
+screen-reader-enabled=false
 
 [org/gnome/desktop/a11y/magnifier]
 color-saturation=1.0
@@ -126,7 +134,10 @@ show-battery-percentage=true
 toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
-application-children=['org-mozilla-firefox', 'gnome-about-panel', 'org-freedesktop-problems-applet', 'gnome-power-panel', 'org-gnome-software', 'org-gnome-ptyxis', 'org-gnome-nautilus', 'code', 'org-gnome-showtime', 'vlc', 'org-gnome-decibels', 'org-gnome-characters', 'libreoffice-writer', 'org-gnome-extensions', 'org-kicad-eeschema', 'org-kicad-kicad']
+application-children=['org-mozilla-firefox', 'gnome-about-panel', 'org-freedesktop-problems-applet', 'gnome-power-panel', 'org-gnome-software', 'org-gnome-ptyxis', 'org-gnome-nautilus', 'code', 'org-gnome-showtime', 'vlc', 'org-gnome-decibels', 'org-gnome-characters', 'libreoffice-writer', 'org-gnome-extensions', 'org-kicad-eeschema', 'org-kicad-kicad', 'antigravity']
+
+[org/gnome/desktop/notifications/application/antigravity]
+application-id='antigravity.desktop'
 
 [org/gnome/desktop/notifications/application/code]
 application-id='code.desktop'
@@ -225,7 +236,7 @@ migrated=true
 default-address-book='a1d455797e9fc3b490d2ccea995b49c86d6e52e2'
 
 [org/gnome/gnome-system-monitor]
-current-tab='resources'
+current-tab='disks'
 maximized=false
 show-dependencies=false
 show-whose-processes='user'
@@ -284,6 +295,12 @@ show-sidebar=true
 sizing-mode='automatic'
 window-height=1048
 
+[org/gnome/portal/filechooser/antigravity]
+last-folder-path='/home/ktauchathuranga/Downloads/apt'
+
+[org/gnome/portal/filechooser/org.gnome.Loupe]
+last-folder-path='/home/ktauchathuranga/Documents/pirate'
+
 [org/gnome/portal/filechooser/org.gnome.Nautilus]
 last-folder-path='/run/media/ktauchathuranga/Cupcake/pi'
 
@@ -291,7 +308,10 @@ last-folder-path='/run/media/ktauchathuranga/Cupcake/pi'
 last-folder-path='/home/ktauchathuranga/Downloads'
 
 [org/gnome/portal/filechooser/org.gnome.TextEditor]
-last-folder-path='/home/ktauchathuranga/Documents'
+last-folder-path='/home/ktauchathuranga'
+
+[org/gnome/portal/filechooser/org.gnome.Zenity]
+last-folder-path='/home/ktauchathuranga/real'
 
 [org/gnome/settings-daemon/plugins/color]
 night-light-schedule-automatic=false
@@ -369,12 +389,13 @@ toggle-quick-settings=@as []
 locations=@av []
 
 [org/gnome/software]
-check-timestamp=int64 1767754841
+check-timestamp=int64 1768445678
 first-run=false
-flatpak-purge-timestamp=int64 1767762237
-install-timestamp=int64 1766051730
-security-timestamp=int64 1766026186330092
-update-notification-timestamp=int64 1767674516
+flatpak-purge-timestamp=int64 1768439651
+install-timestamp=int64 1768029491
+packagekit-historical-updates-timestamp=uint64 1768029491
+security-timestamp=int64 1768445681990015
+update-notification-timestamp=int64 1768447421
 
 [org/gnome/system/location]
 enabled=false
@@ -387,7 +408,7 @@ custom-colors=[(1.0, 0.86274510622024536, 0.70588237047195435, 1.0)]
 selected-color=(true, 0.87843137979507446, 0.10588235408067703, 0.14117647707462311, 1.0)
 
 [org/gtk/gtk4/settings/file-chooser]
-show-hidden=true
+show-hidden=false
 sort-directories-first=false
 
 [org/gtk/settings/color-chooser]
@@ -400,7 +421,7 @@ location-mode='path-bar'
 show-hidden=false
 show-size-column=true
 show-type-column=true
-sidebar-width=196
+sidebar-width=282
 sort-column='modified'
 sort-directories-first=false
 sort-order='descending'
