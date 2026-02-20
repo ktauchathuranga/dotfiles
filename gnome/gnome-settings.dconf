@@ -66,7 +66,7 @@ panel-id='stopwatch'
 size=(870, 690)
 
 [org/gnome/control-center]
-last-panel='keyboard'
+last-panel='multitasking'
 window-state=(800, 600, false)
 
 [org/gnome/desktop/a11y/applications]
@@ -136,7 +136,7 @@ accent-color='purple'
 clock-format='24h'
 clock-show-seconds=false
 clock-show-weekday=true
-color-scheme='prefer-dark'
+color-scheme='default'
 enable-animations=true
 enable-hot-corners=false
 overlay-scrolling=true
@@ -226,6 +226,12 @@ two-finger-scrolling-enabled=true
 
 [org/gnome/desktop/privacy]
 report-technical-problems=false
+
+[org/gnome/desktop/remote-desktop/rdp]
+enable=false
+tls-cert='/home/ktauchathuranga/.local/share/gnome-remote-desktop/certificates/rdp-tls.crt'
+tls-key='/home/ktauchathuranga/.local/share/gnome-remote-desktop/certificates/rdp-tls.key'
+view-only=false
 
 [org/gnome/desktop/screen-time-limits]
 daily-limit-enabled=false
@@ -336,7 +342,7 @@ window-height=1048
 last-folder-path='/home/ktauchathuranga/cloned/lumora'
 
 [org/gnome/portal/filechooser/org.chromium.Chromium]
-last-folder-path='/home/ktauchathuranga/cloned/java'
+last-folder-path='/home/ktauchathuranga/Pictures/Screenshots'
 
 [org/gnome/portal/filechooser/org.gnome.Loupe]
 last-folder-path='/home/ktauchathuranga/Downloads/files/screenshots'
@@ -406,12 +412,12 @@ command-history=['bash -l -c "code"', 'r']
 disable-user-extensions=false
 disabled-extensions=['apps-menu@gnome-shell-extensions.gcampax.github.com', 'background-logo@fedorahosted.org', 'window-list@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com']
 enabled-extensions=['launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'gnomebedtime@ionutbortis.gmail.com', 'monochrome-toggle@ktauchathuranga@gmail.com', 'achroma@ktauchathuranga@gmail.com', 'achroma@ktauchathuranga.github.io']
-favorite-apps=['org.gnome.Snapshot.desktop', 'org.mozilla.firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.TextEditor.desktop', 'org.gnome.Calculator.desktop']
+favorite-apps=['org.gnome.Snapshot.desktop', 'org.mozilla.firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.TextEditor.desktop']
 last-selected-power-profile='performance'
 welcome-dialog-last-shown-version='49.1'
 
 [org/gnome/shell/app-switcher]
-current-workspace-only=false
+current-workspace-only=true
 
 [org/gnome/shell/extensions/achroma]
 current-profile='grayscale'
@@ -433,13 +439,13 @@ toggle-quick-settings=@as []
 locations=@av []
 
 [org/gnome/software]
-check-timestamp=int64 1771133120
+check-timestamp=int64 1771574364
 first-run=false
-flatpak-purge-timestamp=int64 1771118003
-install-timestamp=int64 1770446013
+flatpak-purge-timestamp=int64 1771549034
+install-timestamp=int64 1771400168
 packagekit-historical-updates-timestamp=uint64 1768730640
 security-timestamp=int64 1768708196807879
-update-notification-timestamp=int64 1771045562
+update-notification-timestamp=int64 1771574355
 
 [org/gnome/system/location]
 enabled=false
