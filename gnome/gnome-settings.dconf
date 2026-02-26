@@ -60,13 +60,16 @@ active-view='month'
 window-maximized=true
 window-size=(768, 600)
 
+[org/gnome/clocks]
+alarms=[{'name': <''>, 'id': <'45f4e3e31ab82d058662dda06998c54c'>, 'hour': <4>, 'minute': <0>, 'ring_time': <'2026-02-26T04:00:00+05:30'>, 'days': <[1, 2, 3, 4, 5, 6, 7]>, 'snooze_minutes': <10>, 'ring_minutes': <5>}]
+
 [org/gnome/clocks/state/window]
 maximized=false
-panel-id='stopwatch'
+panel-id='alarm'
 size=(870, 690)
 
 [org/gnome/control-center]
-last-panel='multitasking'
+last-panel='system'
 window-state=(800, 600, false)
 
 [org/gnome/desktop/a11y/applications]
@@ -136,7 +139,7 @@ accent-color='purple'
 clock-format='24h'
 clock-show-seconds=false
 clock-show-weekday=true
-color-scheme='default'
+color-scheme='prefer-dark'
 enable-animations=true
 enable-hot-corners=false
 overlay-scrolling=true
@@ -144,7 +147,8 @@ show-battery-percentage=true
 toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
-application-children=['org-mozilla-firefox', 'gnome-about-panel', 'org-freedesktop-problems-applet', 'gnome-power-panel', 'org-gnome-software', 'org-gnome-ptyxis', 'org-gnome-nautilus', 'code', 'org-gnome-showtime', 'vlc', 'org-gnome-decibels', 'org-gnome-characters', 'libreoffice-writer', 'org-gnome-extensions', 'org-kicad-eeschema', 'org-kicad-kicad', 'antigravity', 'org-kde-kdenlive', 'org-gnome-texteditor', 'org-sdrangel-sdrangel', 'gnome-wellbeing-panel', 'fr-handbrake-ghb']
+application-children=['org-mozilla-firefox', 'gnome-about-panel', 'org-freedesktop-problems-applet', 'gnome-power-panel', 'org-gnome-software', 'org-gnome-ptyxis', 'org-gnome-nautilus', 'code', 'org-gnome-showtime', 'vlc', 'org-gnome-decibels', 'org-gnome-characters', 'libreoffice-writer', 'org-gnome-extensions', 'org-kicad-eeschema', 'org-kicad-kicad', 'antigravity', 'org-kde-kdenlive', 'org-gnome-texteditor', 'org-sdrangel-sdrangel', 'gnome-wellbeing-panel', 'fr-handbrake-ghb', 'org-gnome-clocks']
+show-banners=true
 
 [org/gnome/desktop/notifications/application/antigravity]
 application-id='antigravity.desktop'
@@ -172,6 +176,9 @@ application-id='org.freedesktop.problems.applet.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-characters]
 application-id='org.gnome.Characters.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-clocks]
+application-id='org.gnome.clocks.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-decibels]
 application-id='org.gnome.Decibels.desktop'
@@ -214,6 +221,9 @@ application-id='org.sdrangel.SDRangel.desktop'
 
 [org/gnome/desktop/notifications/application/vlc]
 application-id='vlc.desktop'
+
+[org/gnome/desktop/peripherals/keyboard]
+numlock-state=true
 
 [org/gnome/desktop/peripherals/mouse]
 accel-profile='flat'
@@ -342,7 +352,7 @@ window-height=1048
 last-folder-path='/home/ktauchathuranga/cloned/lumora'
 
 [org/gnome/portal/filechooser/org.chromium.Chromium]
-last-folder-path='/home/ktauchathuranga/Pictures/Screenshots'
+last-folder-path='/home/ktauchathuranga/cloned/babycarrot'
 
 [org/gnome/portal/filechooser/org.gnome.Loupe]
 last-folder-path='/home/ktauchathuranga/Downloads/files/screenshots'
@@ -439,9 +449,9 @@ toggle-quick-settings=@as []
 locations=@av []
 
 [org/gnome/software]
-check-timestamp=int64 1771574364
+check-timestamp=int64 1771987055
 first-run=false
-flatpak-purge-timestamp=int64 1771549034
+flatpak-purge-timestamp=int64 1772065729
 install-timestamp=int64 1771400168
 packagekit-historical-updates-timestamp=uint64 1768730640
 security-timestamp=int64 1768708196807879
