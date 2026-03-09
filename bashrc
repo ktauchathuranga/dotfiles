@@ -43,25 +43,26 @@ clone() {
     cd "$repo" || return 0
 }
 
-# Quick Git Add All + Commit
+# Quick Git Add All + Commit (with default WIP message)
 gac() {
+    local msg
     if [ $# -eq 0 ]; then
-        echo "Error: Please provide a commit message."
-        echo "Usage: gac <commit message>"
-        return 1
+        msg="WIP: Auto-commit on $(date +'%Y-%m-%d %H:%M:%S')"
+    else
+        msg="$*"
     fi
-    # Using $* lets you type the message with or without quotes
-    git add . && git commit -m "$*"
+    git add . && git commit -m "$msg"
 }
 
-# Quick Git Add All + Commit + Push
+# Quick Git Add All + Commit + Push (with default WIP message)
 gacp() {
+    local msg
     if [ $# -eq 0 ]; then
-        echo "Error: Please provide a commit message."
-        echo "Usage: gacp <commit message>"
-        return 1
+        msg="WIP: Auto-commit on $(date +'%Y-%m-%d %H:%M:%S')"
+    else
+        msg="$*"
     fi
-    git add . && git commit -m "$*" && git push
+    git add . && git commit -m "$msg" && git push
 }
 
 . "$HOME/.cargo/env"
