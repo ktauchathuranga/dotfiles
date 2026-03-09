@@ -65,4 +65,7 @@ gacp() {
     git add . && git commit -m "$msg" && git push
 }
 
+# Undo the last commit (but keep all file changes staged)
+alias gundo="git reset --soft HEAD~1"
+
 . "$HOME/.cargo/env"
