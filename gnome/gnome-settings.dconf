@@ -6,7 +6,7 @@ logo-size=5.0
 primary-store='eds:a1d455797e9fc3b490d2ccea995b49c86d6e52e2'
 
 [org/gnome/Characters]
-recent-characters=['🌃', '🫂', '🌙', '♾️', '🥺', '🍃']
+recent-characters=['😇', '🌃', '🫂', '🌙', '♾️', '🥺', '🍃']
 
 [org/gnome/Connections]
 first-run=false
@@ -31,7 +31,7 @@ restore-window-size=false
 window-size=(uint32 80, uint32 24)
 
 [org/gnome/Showtime/State]
-is-maximized=false
+is-maximized=true
 
 [org/gnome/Snapshot]
 is-maximized=false
@@ -39,12 +39,20 @@ window-height=640
 window-width=800
 
 [org/gnome/TextEditor]
-last-save-directory='file:///home/ktauchathuranga/cloned/cw'
+last-save-directory='file:///home/ktauchathuranga/Documents/research'
 
 [org/gnome/baobab/ui]
 active-chart='rings'
 is-maximized=false
 window-size=(960, 600)
+
+[org/gnome/boxes]
+first-run=false
+shared-folders="[<{'uuid': <'c656aa59-ab28-4437-b938-f74da98d5653'>, 'path': <'/home/ktauchathuranga/Downloads'>, 'name': <'WORD'>}>, <{'uuid': <'c656aa59-ab28-4437-b938-f74da98d5653'>, 'path': <'/home/ktauchathuranga/Public'>, 'name': <'Public'>}>]"
+view='icon-view'
+window-maximized=true
+window-position=[26, 23]
+window-size=[768, 600]
 
 [org/gnome/calculator]
 base=10
@@ -57,7 +65,7 @@ window-size=(360, 616)
 
 [org/gnome/calendar]
 active-view='month'
-window-maximized=true
+window-maximized=false
 window-size=(768, 600)
 
 [org/gnome/clocks]
@@ -69,7 +77,7 @@ panel-id='alarm'
 size=(870, 690)
 
 [org/gnome/control-center]
-last-panel='system'
+last-panel='network'
 window-state=(800, 600, false)
 
 [org/gnome/desktop/a11y/applications]
@@ -147,7 +155,7 @@ show-battery-percentage=true
 toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
-application-children=['org-mozilla-firefox', 'gnome-about-panel', 'org-freedesktop-problems-applet', 'gnome-power-panel', 'org-gnome-software', 'org-gnome-ptyxis', 'org-gnome-nautilus', 'code', 'org-gnome-showtime', 'vlc', 'org-gnome-decibels', 'org-gnome-characters', 'libreoffice-writer', 'org-gnome-extensions', 'org-kicad-eeschema', 'org-kicad-kicad', 'antigravity', 'org-kde-kdenlive', 'org-gnome-texteditor', 'org-sdrangel-sdrangel', 'gnome-wellbeing-panel', 'fr-handbrake-ghb', 'org-gnome-clocks']
+application-children=['org-mozilla-firefox', 'gnome-about-panel', 'org-freedesktop-problems-applet', 'gnome-power-panel', 'org-gnome-software', 'org-gnome-ptyxis', 'org-gnome-nautilus', 'code', 'org-gnome-showtime', 'vlc', 'org-gnome-decibels', 'org-gnome-characters', 'libreoffice-writer', 'org-gnome-extensions', 'org-kicad-eeschema', 'org-kicad-kicad', 'antigravity', 'org-kde-kdenlive', 'org-gnome-texteditor', 'org-sdrangel-sdrangel', 'gnome-wellbeing-panel', 'fr-handbrake-ghb', 'org-gnome-clocks', 'org-gnome-boxes']
 show-banners=true
 
 [org/gnome/desktop/notifications/application/antigravity]
@@ -173,6 +181,9 @@ application-id='libreoffice-writer.desktop'
 
 [org/gnome/desktop/notifications/application/org-freedesktop-problems-applet]
 application-id='org.freedesktop.problems.applet.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-boxes]
+application-id='org.gnome.Boxes.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-characters]
 application-id='org.gnome.Characters.desktop'
@@ -309,6 +320,7 @@ overlay-key='Super_L'
 
 [org/gnome/nautilus/preferences]
 default-folder-viewer='icon-view'
+fts-enabled=false
 migrated-gtk-settings=true
 
 [org/gnome/nautilus/window-state]
@@ -316,6 +328,10 @@ initial-size=(890, 550)
 initial-size-file-chooser=(890, 550)
 
 [org/gnome/nm-applet/eap/2d98db61-f9cd-38f7-874d-ee1560824bc2]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/ae452c8a-b293-4797-a697-f7dc71859c4e]
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
 
@@ -346,25 +362,26 @@ dual-page-odd-left=true
 enable-spellchecking=true
 show-sidebar=true
 sizing-mode='automatic'
-window-height=1048
+window-height=992
+window-maximized=true
 
 [org/gnome/portal/filechooser/antigravity]
 last-folder-path='/home/ktauchathuranga/cloned/lumora'
 
 [org/gnome/portal/filechooser/org.chromium.Chromium]
-last-folder-path='/home/ktauchathuranga/cloned/babycarrot'
+last-folder-path='/home/ktauchathuranga/cloned/nvim-config'
 
 [org/gnome/portal/filechooser/org.gnome.Loupe]
-last-folder-path='/home/ktauchathuranga/Downloads/files/screenshots'
+last-folder-path='/home/ktauchathuranga/Downloads'
 
 [org/gnome/portal/filechooser/org.gnome.Nautilus]
-last-folder-path='/run/media/ktauchathuranga/Cupcake/pi'
+last-folder-path='/run/media/ktauchathuranga/cupcake'
 
 [org/gnome/portal/filechooser/org.gnome.Settings]
 last-folder-path='/home/ktauchathuranga/Pictures'
 
 [org/gnome/portal/filechooser/org.gnome.TextEditor]
-last-folder-path='/home/ktauchathuranga/cloned/cw'
+last-folder-path='/home/ktauchathuranga/Documents/research'
 
 [org/gnome/portal/filechooser/org.gnome.Zenity]
 last-folder-path='/home/ktauchathuranga'
@@ -423,7 +440,7 @@ disable-user-extensions=false
 disabled-extensions=['apps-menu@gnome-shell-extensions.gcampax.github.com', 'background-logo@fedorahosted.org', 'window-list@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com']
 enabled-extensions=['launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'gnomebedtime@ionutbortis.gmail.com', 'monochrome-toggle@ktauchathuranga@gmail.com', 'achroma@ktauchathuranga@gmail.com', 'achroma@ktauchathuranga.github.io']
 favorite-apps=['org.gnome.Snapshot.desktop', 'org.mozilla.firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.TextEditor.desktop']
-last-selected-power-profile='performance'
+last-selected-power-profile='power-saver'
 welcome-dialog-last-shown-version='49.1'
 
 [org/gnome/shell/app-switcher]
@@ -449,13 +466,13 @@ toggle-quick-settings=@as []
 locations=@av []
 
 [org/gnome/software]
-check-timestamp=int64 1771987055
+check-timestamp=int64 1772935814
 first-run=false
-flatpak-purge-timestamp=int64 1772065729
+flatpak-purge-timestamp=int64 1773019372
 install-timestamp=int64 1771400168
 packagekit-historical-updates-timestamp=uint64 1768730640
 security-timestamp=int64 1768708196807879
-update-notification-timestamp=int64 1771574355
+update-notification-timestamp=int64 1772686311
 
 [org/gnome/system/location]
 enabled=false
@@ -468,7 +485,7 @@ custom-colors=[(1.0, 0.86274510622024536, 0.70588237047195435, 1.0)]
 selected-color=(true, 0.87843137979507446, 0.10588235408067703, 0.14117647707462311, 1.0)
 
 [org/gtk/gtk4/settings/file-chooser]
-show-hidden=false
+show-hidden=true
 sort-directories-first=false
 
 [org/gtk/settings/color-chooser]

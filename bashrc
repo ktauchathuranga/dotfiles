@@ -43,3 +43,25 @@ clone() {
     cd "$repo" || return 0
 }
 
+# Quick Git Add All + Commit
+gac() {
+    if [ $# -eq 0 ]; then
+        echo "Error: Please provide a commit message."
+        echo "Usage: gac <commit message>"
+        return 1
+    fi
+    # Using $* lets you type the message with or without quotes
+    git add . && git commit -m "$*"
+}
+
+# Quick Git Add All + Commit + Push
+gacp() {
+    if [ $# -eq 0 ]; then
+        echo "Error: Please provide a commit message."
+        echo "Usage: gacp <commit message>"
+        return 1
+    fi
+    git add . && git commit -m "$*" && git push
+}
+
+. "$HOME/.cargo/env"
