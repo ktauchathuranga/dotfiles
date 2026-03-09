@@ -43,22 +43,22 @@ clone() {
     cd "$repo" || return 0
 }
 
-# Quick Git Add All + Commit (with default WIP message)
+# Quick Git Add All + Commit
 gac() {
     local msg
     if [ $# -eq 0 ]; then
-        msg="WIP: Auto-commit on $(date +'%Y-%m-%d %H:%M:%S')"
+        msg="wip: $(date +'%Y-%m-%d %H:%M:%S')"
     else
         msg="$*"
     fi
     git add . && git commit -m "$msg"
 }
 
-# Quick Git Add All + Commit + Push (with default WIP message)
+# Quick Git Add All + Commit + Push
 gacp() {
     local msg
     if [ $# -eq 0 ]; then
-        msg="WIP: Auto-commit on $(date +'%Y-%m-%d %H:%M:%S')"
+        msg="wip: $(date +'%Y-%m-%d %H:%M:%S')"
     else
         msg="$*"
     fi
