@@ -31,7 +31,7 @@ restore-window-size=false
 window-size=(uint32 80, uint32 24)
 
 [org/gnome/Showtime/State]
-is-maximized=true
+is-maximized=false
 
 [org/gnome/Snapshot]
 is-maximized=false
@@ -369,7 +369,7 @@ window-maximized=true
 last-folder-path='/home/ktauchathuranga/cloned/lumora'
 
 [org/gnome/portal/filechooser/org.chromium.Chromium]
-last-folder-path='/home/ktauchathuranga/cloned/nvim-config'
+last-folder-path='/home/ktauchathuranga/cloned/chirper'
 
 [org/gnome/portal/filechooser/org.gnome.Loupe]
 last-folder-path='/home/ktauchathuranga/Downloads'
@@ -468,7 +468,7 @@ locations=@av []
 [org/gnome/software]
 check-timestamp=int64 1772935814
 first-run=false
-flatpak-purge-timestamp=int64 1773019372
+flatpak-purge-timestamp=int64 1773100882
 install-timestamp=int64 1771400168
 packagekit-historical-updates-timestamp=uint64 1768730640
 security-timestamp=int64 1768708196807879
