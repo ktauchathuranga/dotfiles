@@ -70,22 +70,73 @@ alias gundo="git reset --soft HEAD~1"
 
 . "$HOME/.cargo/env"
 
+# --- EXIT STATUS CAPTURE ---
+# This strictly saves the exit code before PS1 evaluates, preventing other functions from overwriting it.
+PROMPT_COMMAND='LAST_EXIT=$?'
+
+get_exit_status() {
+    if [ $LAST_EXIT -eq 0 ]; then
+        # Success: Green checkmark
+        printf "\001\e[0;32m\002✓\001\e[0m\002"
+    else
+        # Failure: Red cross
+        printf "\001\e[0;31m\002✗\001\e[0m\002"
+    fi
+}
+
+# --- EXIT STATUS CAPTURE ---
+# This strictly saves the exit code before PS1 evaluates, preventing other functions from overwriting it.
+PROMPT_COMMAND='LAST_EXIT=$?'
+
+get_exit_status() {
+    if [ $LAST_EXIT -eq 0 ]; then
+        # Success: Green checkmark
+        printf "\001\e[0;32m\002✓\001\e[0m\002"
+    else
+        # Failure: Red cross
+        printf "\001\e[0;31m\002✗\001\e[0m\002"
+    fi
+}
+
+# --- EXIT STATUS CAPTURE ---
+# This strictly saves the exit code before PS1 evaluates, preventing other functions from overwriting it.
+PROMPT_COMMAND='LAST_EXIT=$?'
+
+get_exit_status() {
+    if [ $LAST_EXIT -eq 0 ]; then
+        # Success: Green checkmark
+        printf "\001\e[0;32m\002✓\001\e[0m\002"
+    else
+        # Failure: Red cross
+        printf "\001\e[0;31m\002✗\001\e[0m\002"
+    fi
+}
+
 # --- GIT PROMPT ADDITION ---
 # Extract the current git branch
 parse_git_branch() {
-     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ git:(\1)/'
+    # Get the branch name
+    local branch=$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/')
+    
+    # If we are in a git repo, output the formatted string
+    if [ -n "$branch" ]; then
+        # \001 and \002 replace \[ and \] for proper rendering inside a function
+        # \001\e[0;34m\002 = Blue for "git:(" and ")"
+        # \001\e[1;33m\002 = Bold Yellow for the branch name
+        printf " \001\e[0;34m\002git:(\001\e[1;33m\002%s\001\e[0;34m\002)" "$branch"
+    fi
 }
 
 # Set the prompt to include the branch
 
-#  ktauchathuranga@certified-potato ~/cloned/dotfiles git:(main) $  
-# export PS1="\[\e[32m\]\u@\h \[\e[34m\]\w\[\e[33m\]\$(parse_git_branch)\[\e[00m\] $ "
+#  ktauchathuranga@certified-potato ~/cloned/dotfiles git:(main) ✓ $  
+# export PS1="\[\e[1;36m\]\u@\h \[\e[1;32m\]\w\$(parse_git_branch) \$(get_exit_status) \[\e[0m\]$ "
 
-# ~/cloned/dotfiles git:(main) $
-# export PS1="\[\e[34m\]\w\[\e[33m\]\$(parse_git_branch)\[\e[00m\] $ "
+# ~/cloned/dotfiles git:(main) ✓ $
+# export PS1="\[\e[1;32m\]\w\$(parse_git_branch) \$(get_exit_status) \[\e[0m\]$ "
 
-# ktauchathuranga ~/cloned/dotfiles git:(main) $
-# export PS1="\[\e[32m\]\u \[\e[34m\]\w\[\e[33m\]\$(parse_git_branch)\[\e[00m\] $ "
+# ktauchathuranga ~/cloned/dotfiles git:(main) ✓ $
+# export PS1="\[\e[1;36m\]\u \[\e[1;32m\]\w\$(parse_git_branch) \$(get_exit_status) \[\e[0m\]$ "
 
-# dotfiles git:(main) $ 
-export PS1="\[\e[34m\]\W\[\e[33m\]\$(parse_git_branch)\[\e[00m\] $ "
+# dotfiles git:(main) ✓ $ 
+export PS1="\[\e[1;32m\]\W\$(parse_git_branch) \$(get_exit_status) \[\e[0m\]$ "
