@@ -69,3 +69,23 @@ gacp() {
 alias gundo="git reset --soft HEAD~1"
 
 . "$HOME/.cargo/env"
+
+# --- GIT PROMPT ADDITION ---
+# Extract the current git branch
+parse_git_branch() {
+     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ git:(\1)/'
+}
+
+# Set the prompt to include the branch
+
+#  ktauchathuranga@certified-potato ~/cloned/dotfiles git:(main) $  
+# export PS1="\[\e[32m\]\u@\h \[\e[34m\]\w\[\e[33m\]\$(parse_git_branch)\[\e[00m\] $ "
+
+# ~/cloned/dotfiles git:(main) $
+# export PS1="\[\e[34m\]\w\[\e[33m\]\$(parse_git_branch)\[\e[00m\] $ "
+
+# ktauchathuranga ~/cloned/dotfiles git:(main) $
+# export PS1="\[\e[32m\]\u \[\e[34m\]\w\[\e[33m\]\$(parse_git_branch)\[\e[00m\] $ "
+
+# dotfiles git:(main) $ 
+export PS1="\[\e[34m\]\W\[\e[33m\]\$(parse_git_branch)\[\e[00m\] $ "
