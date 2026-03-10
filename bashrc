@@ -79,10 +79,22 @@ get_exit_status() {
 
 # --- GIT PROMPT ADDITION ---
 parse_git_branch() {
-	local branch=$(git branch --show-current 2>/dev/null)
-    if [ -n "$branch" ]; then
-        printf " \001\e[0;34m\002git:(\001\e[1;33m\002%s\001\e[0;34m\002)" "$branch"
+    # 1. Get branch name (Fastest way)
+    local branch=$(git symbolic-ref --short HEAD 2>/dev/null)
+    [ -z "$branch" ] && return # Exit if not in a git repo
+
+    # 2. Check for changes (Very fast)
+    # This checks for modified tracked files
+    local status_symbol=""
+    if ! git diff-index --quiet HEAD -- 2>/dev/null; then
+        status_symbol="*"
+    # This checks for untracked files (Optional, remove if you only want tracked)
+    elif [ -n "$(git ls-files --others --exclude-standard | head -n 1)" ]; then
+        status_symbol="*"
     fi
+
+    # 3. Print the prompt
+    printf " \001\e[0;34m\002git:(\001\e[1;33m\002%s%s\001\e[0;34m\002)" "$branch" "$status_symbol"
 }
 
 # --- FINAL PROMPT MODES ---
