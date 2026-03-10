@@ -56,13 +56,7 @@ gac() {
 
 # Quick Git Add All + Commit + Push
 gacp() {
-    local msg
-    if [ $# -eq 0 ]; then
-        msg="wip: $(date +'%Y-%m-%d %H:%M:%S')"
-    else
-        msg="$*"
-    fi
-    git add . && git commit -m "$msg" && git push
+    gac "$@" && git push
 }
 
 # Undo the last commit (but keep all file changes staged)
@@ -85,7 +79,7 @@ get_exit_status() {
 
 # --- GIT PROMPT ADDITION ---
 parse_git_branch() {
-    local branch=$(git branch 2>/dev/null | sed -n '/\* /s///p')
+	local branch=$(git branch --show-current 2>/dev/null)
     if [ -n "$branch" ]; then
         printf " \001\e[0;34m\002git:(\001\e[1;33m\002%s\001\e[0;34m\002)" "$branch"
     fi
