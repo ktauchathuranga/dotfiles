@@ -94,7 +94,8 @@ parse_git_branch() {
     fi
 
     # 3. Print the prompt
-    printf " \001\e[0;34m\002git:(\001\e[1;33m\002%s%s\001\e[0;34m\002)" "$branch" "$status_symbol"
+    # Purple: \e[0;35m | Yellow/Gold: \e[1;33m
+    printf " \001\e[0;35m\002git:(\001\e[1;33m\002%s%s\001\e[0;35m\002)" "$branch" "$status_symbol"
 }
 
 # --- FINAL PROMPT MODES ---
