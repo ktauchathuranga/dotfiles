@@ -31,7 +31,7 @@ restore-window-size=false
 window-size=(uint32 80, uint32 24)
 
 [org/gnome/Showtime/State]
-is-maximized=false
+is-maximized=true
 
 [org/gnome/Snapshot]
 is-maximized=false
@@ -39,7 +39,7 @@ window-height=640
 window-width=800
 
 [org/gnome/TextEditor]
-last-save-directory='file:///home/ktauchathuranga/Documents/research'
+last-save-directory='file:///home/ktauchathuranga/Documents'
 
 [org/gnome/baobab/ui]
 active-chart='rings'
@@ -77,7 +77,7 @@ panel-id='alarm'
 size=(870, 690)
 
 [org/gnome/control-center]
-last-panel='network'
+last-panel='system'
 window-state=(800, 600, false)
 
 [org/gnome/desktop/a11y/applications]
@@ -308,7 +308,7 @@ window-width=800
 col-26-visible=false
 col-26-width=0
 columns-order=[0, 12, 1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26]
-sort-col=8
+sort-col=15
 sort-order=0
 
 [org/gnome/login-screen]
@@ -369,7 +369,7 @@ window-maximized=true
 last-folder-path='/home/ktauchathuranga/cloned/lumora'
 
 [org/gnome/portal/filechooser/org.chromium.Chromium]
-last-folder-path='/home/ktauchathuranga/cloned/chirper'
+last-folder-path='/home/ktauchathuranga/cloned/notebud-laravel/notebud'
 
 [org/gnome/portal/filechooser/org.gnome.Loupe]
 last-folder-path='/home/ktauchathuranga/Downloads'
@@ -381,7 +381,7 @@ last-folder-path='/run/media/ktauchathuranga/cupcake'
 last-folder-path='/home/ktauchathuranga/Pictures'
 
 [org/gnome/portal/filechooser/org.gnome.TextEditor]
-last-folder-path='/home/ktauchathuranga/Documents/research'
+last-folder-path='/home/ktauchathuranga/Documents'
 
 [org/gnome/portal/filechooser/org.gnome.Zenity]
 last-folder-path='/home/ktauchathuranga'
@@ -468,7 +468,7 @@ locations=@av []
 [org/gnome/software]
 check-timestamp=int64 1772935814
 first-run=false
-flatpak-purge-timestamp=int64 1773100882
+flatpak-purge-timestamp=int64 1773277214
 install-timestamp=int64 1771400168
 packagekit-historical-updates-timestamp=uint64 1768730640
 security-timestamp=int64 1768708196807879
