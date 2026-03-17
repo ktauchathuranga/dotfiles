@@ -33,7 +33,7 @@ use-system-font=true
 window-size=(uint32 80, uint32 24)
 
 [org/gnome/Ptyxis/Profiles/4fea7cb4d57e5a056d5d446c6942c844]
-palette='Treehouse'
+palette='Papercolor'
 
 [org/gnome/Showtime/State]
 is-maximized=true
@@ -82,7 +82,7 @@ panel-id='alarm'
 size=(870, 690)
 
 [org/gnome/control-center]
-last-panel='system'
+last-panel='wifi'
 window-state=(800, 600, false)
 
 [org/gnome/desktop/a11y/applications]
