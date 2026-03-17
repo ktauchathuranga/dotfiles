@@ -33,7 +33,7 @@ use-system-font=true
 window-size=(uint32 80, uint32 24)
 
 [org/gnome/Ptyxis/Profiles/4fea7cb4d57e5a056d5d446c6942c844]
-palette='Papercolor'
+palette='Treehouse'
 
 [org/gnome/Showtime/State]
 is-maximized=true
