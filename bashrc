@@ -100,14 +100,19 @@ parse_git_branch() {
 
 # --- FINAL PROMPT MODES ---
 
-# ktauchathuranga@certified-potato ~/cloned/dotfiles git:(main) ✓   
-# export PS1="\[\e[1;36m\]\u@\h \[\e[0;36m\]\w\$(parse_git_branch) \$(get_exit_status) \[\e[0m\] "
+# Global Prompt Symbol Configuration
+# Include the trailing space here so removing the symbol removes the space too
+# ❯
+export PROMPT_SYMBOL=""
 
-# ~/cloned/dotfiles git:(main) ✓ 
-# export PS1="\[\e[0;36m\]\w\$(parse_git_branch) \$(get_exit_status) \[\e[0m\] "
+# ktauchathuranga@certified-potato ~/cloned/dotfiles git:(main) ✓ ❯ 
+# export PS1="\[\e[1;36m\]\u@\h \[\e[0;36m\]\w\$(parse_git_branch) \$(get_exit_status) \[\e[0m\]${PROMPT_SYMBOL}"
 
-# ktauchathuranga ~/cloned/dotfiles git:(main) ✓ 
-# export PS1="\[\e[1;36m\]\u \[\e[0;36m\]\w\$(parse_git_branch) \$(get_exit_status) \[\e[0m\] "
+# ~/cloned/dotfiles git:(main) ✓ ❯
+# export PS1="\[\e[0;36m\]\w\$(parse_git_branch) \$(get_exit_status) \[\e[0m\]${PROMPT_SYMBOL}"
 
-# dotfiles git:(main) ✓  
-export PS1="\[\e[0;36m\]\W\$(parse_git_branch) \$(get_exit_status) \[\e[0m\]"
+# ktauchathuranga ~/cloned/dotfiles git:(main) ✓ ❯
+# export PS1="\[\e[1;36m\]\u \[\e[0;36m\]\w\$(parse_git_branch) \$(get_exit_status) \[\e[0m\]${PROMPT_SYMBOL}"
+
+# dotfiles git:(main) ✓ ❯ 
+export PS1="\[\e[0;36m\]\W\$(parse_git_branch) \$(get_exit_status) \[\e[0m\]${PROMPT_SYMBOL}"
