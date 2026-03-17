@@ -24,11 +24,16 @@ show-properties=false
 
 [org/gnome/Ptyxis]
 default-profile-uuid='4fea7cb4d57e5a056d5d446c6942c844'
+font-name='Liberation Mono 10'
 interface-style='dark'
 profile-uuids=['4fea7cb4d57e5a056d5d446c6942c844']
 restore-session=false
 restore-window-size=false
+use-system-font=true
 window-size=(uint32 80, uint32 24)
+
+[org/gnome/Ptyxis/Profiles/4fea7cb4d57e5a056d5d446c6942c844]
+palette='gnome'
 
 [org/gnome/Showtime/State]
 is-maximized=true
@@ -150,6 +155,7 @@ clock-show-weekday=true
 color-scheme='prefer-dark'
 enable-animations=true
 enable-hot-corners=false
+monospace-font-name='Noto Sans Mono 11'
 overlay-scrolling=true
 show-battery-percentage=true
 toolkit-accessibility=false
@@ -470,7 +476,7 @@ toggle-quick-settings=@as []
 locations=@av []
 
 [org/gnome/software]
-check-timestamp=int64 1773640454
+check-timestamp=int64 1773715975
 first-run=false
 flatpak-purge-timestamp=int64 1773712292
 install-timestamp=int64 1771400168
