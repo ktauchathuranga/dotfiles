@@ -69,11 +69,11 @@ PROMPT_COMMAND='LAST_EXIT=$?'
 
 get_exit_status() {
     if [ $LAST_EXIT -eq 0 ]; then
-        # Success: Green checkmark
-        printf "\001\e[0;32m\002✓\001\e[0m\002"
+        # Success: Green checkmark (Bold Green)
+        printf "\001\e[1;32m\002✓\001\e[0m\002"
     else
-        # Failure: Red cross
-        printf "\001\e[0;31m\002✗\001\e[0m\002"
+        # Failure: Red cross (Bold Red)
+        printf "\001\e[1;31m\002✗\001\e[0m\002"
     fi
 }
 
@@ -94,20 +94,20 @@ parse_git_branch() {
     fi
 
     # 3. Print the prompt
-    # Purple: \e[0;35m | Yellow/Gold: \e[1;33m
-    printf " \001\e[0;35m\002git:(\001\e[1;33m\002%s%s\001\e[0;35m\002)" "$branch" "$status_symbol"
+    # Bold Blue: \e[1;34m | Red: \e[0;31m
+    printf " \001\e[1;34m\002git:(\001\e[0;31m\002%s%s\001\e[1;34m\002)" "$branch" "$status_symbol"
 }
 
 # --- FINAL PROMPT MODES ---
 
-# ktauchathuranga@certified-potato ~/cloned/dotfiles git:(main) ✓ $  
-# export PS1="\[\e[1;36m\]\u@\h \[\e[1;32m\]\w\$(parse_git_branch) \$(get_exit_status) \[\e[0m\]$ "
+# ktauchathuranga@certified-potato ~/cloned/dotfiles git:(main) ✓   
+# export PS1="\[\e[1;36m\]\u@\h \[\e[0;36m\]\w\$(parse_git_branch) \$(get_exit_status) \[\e[0m\] "
 
-# ~/cloned/dotfiles git:(main) ✓ $
-# export PS1="\[\e[1;32m\]\w\$(parse_git_branch) \$(get_exit_status) \[\e[0m\]$ "
+# ~/cloned/dotfiles git:(main) ✓ 
+# export PS1="\[\e[0;36m\]\w\$(parse_git_branch) \$(get_exit_status) \[\e[0m\] "
 
-# ktauchathuranga ~/cloned/dotfiles git:(main) ✓ $
-# export PS1="\[\e[1;36m\]\u \[\e[1;32m\]\w\$(parse_git_branch) \$(get_exit_status) \[\e[0m\]$ "
+# ktauchathuranga ~/cloned/dotfiles git:(main) ✓ 
+# export PS1="\[\e[1;36m\]\u \[\e[0;36m\]\w\$(parse_git_branch) \$(get_exit_status) \[\e[0m\] "
 
-# dotfiles git:(main) ✓ $ 
-export PS1="\[\e[1;32m\]\W\$(parse_git_branch) \$(get_exit_status) \[\e[0m\]$ "
+# dotfiles git:(main) ✓  
+export PS1="\[\e[0;36m\]\W\$(parse_git_branch) \$(get_exit_status) \[\e[0m\]"
