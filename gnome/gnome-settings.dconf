@@ -74,7 +74,7 @@ window-maximized=false
 window-size=(768, 600)
 
 [org/gnome/clocks]
-alarms=[{'name': <''>, 'id': <'45f4e3e31ab82d058662dda06998c54c'>, 'hour': <4>, 'minute': <0>, 'ring_time': <'2026-03-18T04:00:00+05:30'>, 'days': <[1, 2, 3, 4, 5, 6, 7]>, 'snooze_minutes': <10>, 'ring_minutes': <5>}]
+alarms=[{'name': <''>, 'id': <'45f4e3e31ab82d058662dda06998c54c'>, 'hour': <4>, 'minute': <0>, 'ring_time': <'2026-03-19T04:00:00+05:30'>, 'days': <[1, 2, 3, 4, 5, 6, 7]>, 'snooze_minutes': <10>, 'ring_minutes': <5>}]
 
 [org/gnome/clocks/state/window]
 maximized=false
@@ -82,7 +82,7 @@ panel-id='alarm'
 size=(870, 690)
 
 [org/gnome/control-center]
-last-panel='wifi'
+last-panel='system'
 window-state=(800, 600, false)
 
 [org/gnome/desktop/a11y/applications]
@@ -381,7 +381,7 @@ window-maximized=true
 last-folder-path='/home/ktauchathuranga/cloned/lumora'
 
 [org/gnome/portal/filechooser/org.chromium.Chromium]
-last-folder-path='/home/ktauchathuranga/cloned/notebud-laravel/notebud'
+last-folder-path='/home/ktauchathuranga'
 
 [org/gnome/portal/filechooser/org.gnome.Loupe]
 last-folder-path='/home/ktauchathuranga/Downloads'
@@ -478,9 +478,9 @@ toggle-quick-settings=@as []
 locations=@av []
 
 [org/gnome/software]
-check-timestamp=int64 1773715975
+check-timestamp=int64 1773795856
 first-run=false
-flatpak-purge-timestamp=int64 1773712292
+flatpak-purge-timestamp=int64 1773795769
 install-timestamp=int64 1771400168
 packagekit-historical-updates-timestamp=uint64 1768730640
 security-timestamp=int64 1768708196807879
@@ -497,7 +497,7 @@ custom-colors=[(1.0, 0.86274510622024536, 0.70588237047195435, 1.0)]
 selected-color=(true, 0.87843137979507446, 0.10588235408067703, 0.14117647707462311, 1.0)
 
 [org/gtk/gtk4/settings/file-chooser]
-show-hidden=true
+show-hidden=false
 sort-directories-first=false
 
 [org/gtk/settings/color-chooser]

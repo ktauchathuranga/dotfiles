@@ -62,6 +62,9 @@ gacp() {
 # Undo the last commit (but keep all file changes staged)
 alias gundo="git reset --soft HEAD~1"
 
+# Clear the terminal quickly
+alias cl="clear"
+
 . "$HOME/.cargo/env"
 
 # --- EXIT STATUS CAPTURE ---
