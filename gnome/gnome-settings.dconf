@@ -74,7 +74,7 @@ window-maximized=false
 window-size=(768, 600)
 
 [org/gnome/clocks]
-alarms=[{'name': <''>, 'id': <'45f4e3e31ab82d058662dda06998c54c'>, 'hour': <4>, 'minute': <0>, 'ring_time': <'2026-03-19T04:00:00+05:30'>, 'days': <[1, 2, 3, 4, 5, 6, 7]>, 'snooze_minutes': <10>, 'ring_minutes': <5>}]
+alarms=[{'name': <''>, 'id': <'45f4e3e31ab82d058662dda06998c54c'>, 'hour': <4>, 'minute': <0>, 'ring_time': <'2026-03-20T04:00:00+05:30'>, 'days': <[1, 2, 3, 4, 5, 6, 7]>, 'snooze_minutes': <10>, 'ring_minutes': <5>}]
 
 [org/gnome/clocks/state/window]
 maximized=false
@@ -164,7 +164,7 @@ toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
 application-children=['org-mozilla-firefox', 'gnome-about-panel', 'org-freedesktop-problems-applet', 'gnome-power-panel', 'org-gnome-software', 'org-gnome-ptyxis', 'org-gnome-nautilus', 'code', 'org-gnome-showtime', 'vlc', 'org-gnome-decibels', 'org-gnome-characters', 'libreoffice-writer', 'org-gnome-extensions', 'org-kicad-eeschema', 'org-kicad-kicad', 'antigravity', 'org-kde-kdenlive', 'org-gnome-texteditor', 'org-sdrangel-sdrangel', 'gnome-wellbeing-panel', 'fr-handbrake-ghb', 'org-gnome-clocks', 'org-gnome-boxes']
-show-banners=true
+show-banners=false
 
 [org/gnome/desktop/notifications/application/antigravity]
 application-id='antigravity.desktop'
@@ -478,13 +478,13 @@ toggle-quick-settings=@as []
 locations=@av []
 
 [org/gnome/software]
-check-timestamp=int64 1773795856
+check-timestamp=int64 1773911095
 first-run=false
-flatpak-purge-timestamp=int64 1773795769
+flatpak-purge-timestamp=int64 1773886030
 install-timestamp=int64 1771400168
-packagekit-historical-updates-timestamp=uint64 1768730640
+packagekit-historical-updates-timestamp=uint64 1773891961
 security-timestamp=int64 1768708196807879
-update-notification-timestamp=int64 1773552062
+update-notification-timestamp=int64 1773883351
 
 [org/gnome/system/location]
 enabled=false
