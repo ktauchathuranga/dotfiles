@@ -82,7 +82,7 @@ panel-id='alarm'
 size=(870, 690)
 
 [org/gnome/control-center]
-last-panel='system'
+last-panel='wifi'
 window-state=(800, 600, false)
 
 [org/gnome/desktop/a11y/applications]
@@ -373,9 +373,10 @@ dual-page=false
 dual-page-odd-left=true
 enable-spellchecking=true
 show-sidebar=true
-sizing-mode='automatic'
+sizing-mode='free'
 window-height=992
 window-maximized=true
+zoom=0.5492758699902518
 
 [org/gnome/portal/filechooser/antigravity]
 last-folder-path='/home/ktauchathuranga/cloned/lumora'
@@ -478,13 +479,13 @@ toggle-quick-settings=@as []
 locations=@av []
 
 [org/gnome/software]
-check-timestamp=int64 1773911095
+check-timestamp=int64 1774246824
 first-run=false
-flatpak-purge-timestamp=int64 1773886030
+flatpak-purge-timestamp=int64 1774234354
 install-timestamp=int64 1771400168
 packagekit-historical-updates-timestamp=uint64 1773891961
 security-timestamp=int64 1768708196807879
-update-notification-timestamp=int64 1773883351
+update-notification-timestamp=int64 1774150776
 
 [org/gnome/system/location]
 enabled=false
@@ -497,7 +498,7 @@ custom-colors=[(1.0, 0.86274510622024536, 0.70588237047195435, 1.0)]
 selected-color=(true, 0.87843137979507446, 0.10588235408067703, 0.14117647707462311, 1.0)
 
 [org/gtk/gtk4/settings/file-chooser]
-show-hidden=false
+show-hidden=true
 sort-directories-first=false
 
 [org/gtk/settings/color-chooser]

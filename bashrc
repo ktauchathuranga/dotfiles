@@ -56,7 +56,17 @@ gac() {
 
 # Quick Git Add All + Commit + Push
 gacp() {
-    gac "$@" && git push
+    gac "$@" && git pull --rebase && git push
+}
+
+# Quick Git Pull (Rebase to keep history clean during pair programming)
+gpl() {
+    git pull --rebase "$@"
+}
+
+# Quick Git Sync (Pull with rebase, then Push)
+gsync() {
+    git pull --rebase && git push
 }
 
 # Clear the terminal quickly
