@@ -54,9 +54,32 @@ gac() {
     git add . && git commit -m "$msg"
 }
 
-# Quick Git Add All + Commit + Push
+# Quick Git Add All + Commit + Push (with rebase fail-safe)
 gacp() {
-    gac "$@" && git pull --rebase && git push
+    local msg
+    if [ $# -eq 0 ]; then
+        msg="wip: $(date +'%Y-%m-%d %H:%M:%S')"
+    else
+        msg="$*"
+    fi
+
+    git add .
+    git commit -m "$msg"
+
+    echo -e "\n\033[1;34mPulling latest changes...\033[0m"
+    if git pull --rebase; then
+        echo -e "\033[1;32mRebase successful. Pushing code...\033[0m"
+        git push
+    else
+        echo -e "\n\033[1;31mRebase conflict detected. Push aborted.\033[0m"
+        echo -e "You are currently paused mid-rebase."
+        echo -e "\nTo fix this:"
+        echo -e "  1. Resolve the conflicts in your editor."
+        echo -e "  2. Run: \033[1;33mgit add .\033[0m"
+        echo -e "  3. Run: \033[1;33mgit rebase --continue\033[0m"
+        echo -e "  4. Run: \033[1;33mgit push\033[0m\n"
+        return 1
+    fi
 }
 
 # Quick Git Pull (Rebase to keep history clean during pair programming)

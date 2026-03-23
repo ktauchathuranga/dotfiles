@@ -82,7 +82,7 @@ panel-id='alarm'
 size=(870, 690)
 
 [org/gnome/control-center]
-last-panel='wifi'
+last-panel='system'
 window-state=(800, 600, false)
 
 [org/gnome/desktop/a11y/applications]
@@ -164,7 +164,7 @@ toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
 application-children=['org-mozilla-firefox', 'gnome-about-panel', 'org-freedesktop-problems-applet', 'gnome-power-panel', 'org-gnome-software', 'org-gnome-ptyxis', 'org-gnome-nautilus', 'code', 'org-gnome-showtime', 'vlc', 'org-gnome-decibels', 'org-gnome-characters', 'libreoffice-writer', 'org-gnome-extensions', 'org-kicad-eeschema', 'org-kicad-kicad', 'antigravity', 'org-kde-kdenlive', 'org-gnome-texteditor', 'org-sdrangel-sdrangel', 'gnome-wellbeing-panel', 'fr-handbrake-ghb', 'org-gnome-clocks', 'org-gnome-boxes']
-show-banners=false
+show-banners=true
 
 [org/gnome/desktop/notifications/application/antigravity]
 application-id='antigravity.desktop'
