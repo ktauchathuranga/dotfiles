@@ -20,12 +20,12 @@ window-maximized=false
 window-width=800
 
 [org/gnome/Loupe]
-show-properties=false
+show-properties=true
 
 [org/gnome/Ptyxis]
 default-profile-uuid='4fea7cb4d57e5a056d5d446c6942c844'
 font-name='Liberation Mono 10'
-interface-style='dark'
+interface-style='system'
 profile-uuids=['4fea7cb4d57e5a056d5d446c6942c844']
 restore-session=false
 restore-window-size=false
@@ -33,7 +33,7 @@ use-system-font=true
 window-size=(uint32 80, uint32 24)
 
 [org/gnome/Ptyxis/Profiles/4fea7cb4d57e5a056d5d446c6942c844]
-palette='Papercolor'
+palette='gnome'
 
 [org/gnome/Showtime/State]
 is-maximized=true
@@ -152,7 +152,7 @@ accent-color='purple'
 clock-format='24h'
 clock-show-seconds=false
 clock-show-weekday=true
-color-scheme='prefer-dark'
+color-scheme='default'
 enable-animations=true
 enable-hot-corners=false
 font-hinting='slight'
@@ -447,7 +447,7 @@ enabled-connections=@as []
 enabled-connections=@as []
 
 [org/gnome/shell]
-app-picker-layout=[{'org.fedoraproject.MediaWriter.desktop': <{'position': <0>}>, 'org.gnome.Contacts.desktop': <{'position': <1>}>, 'org.gnome.clocks.desktop': <{'position': <2>}>, 'org.gnome.Maps.desktop': <{'position': <3>}>, 'org.gnome.SimpleScan.desktop': <{'position': <4>}>, 'org.gnome.Settings.desktop': <{'position': <5>}>, 'org.gnome.Boxes.desktop': <{'position': <6>}>, 'org.gnome.Calendar.desktop': <{'position': <7>}>, 'org.gnome.Showtime.desktop': <{'position': <8>}>, 'libreoffice-calc.desktop': <{'position': <9>}>, 'Utilities': <{'position': <10>}>, 'System': <{'position': <11>}>, 'org.gnome.Extensions.desktop': <{'position': <12>}>, 'org.gnome.Characters.desktop': <{'position': <13>}>, 'org.gnome.Yelp.desktop': <{'position': <14>}>, 'libreoffice-writer.desktop': <{'position': <15>}>, 'org.gnome.Ptyxis.desktop': <{'position': <16>}>, 'gpredict.desktop': <{'position': <17>}>, 'org.kicad.kicad.desktop': <{'position': <18>}>, 'org.kicad.gerbview.desktop': <{'position': <19>}>, 'org.kicad.bitmap2component.desktop': <{'position': <20>}>, 'org.kicad.pcbcalculator.desktop': <{'position': <21>}>}, {'libreoffice-impress.desktop': <{'position': <0>}>, 'org.kicad.pcbnew.desktop': <{'position': <1>}>, 'org.kicad.eeschema.desktop': <{'position': <2>}>, 'mpv.desktop': <{'position': <3>}>, 'opencascade-draw.desktop': <{'position': <4>}>, 'org.raspberrypi.rpi-imager.desktop': <{'position': <5>}>, 'sdrpp.desktop': <{'position': <6>}>, 'org.gnome.Software.desktop': <{'position': <7>}>, 'vncviewer.desktop': <{'position': <8>}>, 'urh.desktop': <{'position': <9>}>, 'code.desktop': <{'position': <10>}>, 'vlc.desktop': <{'position': <11>}>, 'dk.gqrx.gqrx.desktop': <{'position': <12>}>, 'com.simulide.simulide.desktop': <{'position': <13>}>, 'antigravity.desktop': <{'position': <14>}>, 'gnuradio-grc.desktop': <{'position': <15>}>, 'org.kde.kdenlive.desktop': <{'position': <16>}>, 'com.obsproject.Studio.desktop': <{'position': <17>}>, 'qsstv.desktop': <{'position': <18>}>, 'satdump.desktop': <{'position': <19>}>, 'org.sdrangel.SDRangel.desktop': <{'position': <20>}>, 'fr.handbrake.ghb.desktop': <{'position': <21>}>}]
+app-picker-layout=[{'org.fedoraproject.MediaWriter.desktop': <{'position': <0>}>, 'org.gnome.Contacts.desktop': <{'position': <1>}>, 'org.gnome.clocks.desktop': <{'position': <2>}>, 'org.gnome.Maps.desktop': <{'position': <3>}>, 'org.gnome.SimpleScan.desktop': <{'position': <4>}>, 'org.gnome.Settings.desktop': <{'position': <5>}>, 'org.gnome.Boxes.desktop': <{'position': <6>}>, 'org.gnome.Calendar.desktop': <{'position': <7>}>, 'org.gnome.Showtime.desktop': <{'position': <8>}>, 'libreoffice-calc.desktop': <{'position': <9>}>, 'Utilities': <{'position': <10>}>, 'System': <{'position': <11>}>, 'org.gnome.Extensions.desktop': <{'position': <12>}>, 'org.gnome.Characters.desktop': <{'position': <13>}>, 'org.gnome.Yelp.desktop': <{'position': <14>}>, 'libreoffice-writer.desktop': <{'position': <15>}>, 'org.gnome.Ptyxis.desktop': <{'position': <16>}>, 'gpredict.desktop': <{'position': <17>}>, 'org.kicad.kicad.desktop': <{'position': <18>}>, 'org.kicad.gerbview.desktop': <{'position': <19>}>, 'org.kicad.bitmap2component.desktop': <{'position': <20>}>, 'org.kicad.pcbcalculator.desktop': <{'position': <21>}>}, {'libreoffice-impress.desktop': <{'position': <0>}>, 'org.kicad.pcbnew.desktop': <{'position': <1>}>, 'org.kicad.eeschema.desktop': <{'position': <2>}>, 'mpv.desktop': <{'position': <3>}>, 'opencascade-draw.desktop': <{'position': <4>}>, 'org.raspberrypi.rpi-imager.desktop': <{'position': <5>}>, 'sdrpp.desktop': <{'position': <6>}>, 'org.gnome.Software.desktop': <{'position': <7>}>, 'vncviewer.desktop': <{'position': <8>}>, 'urh.desktop': <{'position': <9>}>, 'code.desktop': <{'position': <10>}>, 'vlc.desktop': <{'position': <11>}>, 'dk.gqrx.gqrx.desktop': <{'position': <12>}>, 'com.simulide.simulide.desktop': <{'position': <13>}>, 'antigravity.desktop': <{'position': <14>}>, 'gnuradio-grc.desktop': <{'position': <15>}>, 'org.kde.kdenlive.desktop': <{'position': <16>}>, 'com.obsproject.Studio.desktop': <{'position': <17>}>, 'qsstv.desktop': <{'position': <18>}>, 'satdump.desktop': <{'position': <19>}>, 'org.sdrangel.SDRangel.desktop': <{'position': <20>}>, 'fr.handbrake.ghb.desktop': <{'position': <21>}>, 'org.gnome.Calculator.desktop': <{'position': <22>}>, 'nvim.desktop': <{'position': <23>}>}, {'putty.desktop': <{'position': <0>}>, 'org.gnome.tweaks.desktop': <{'position': <1>}>}]
 command-history=['bash -l -c "code"', 'r']
 disable-user-extensions=false
 disabled-extensions=['apps-menu@gnome-shell-extensions.gcampax.github.com', 'background-logo@fedorahosted.org', 'window-list@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com']
@@ -479,9 +479,9 @@ toggle-quick-settings=@as []
 locations=@av []
 
 [org/gnome/software]
-check-timestamp=int64 1774246824
+check-timestamp=int64 1774324313
 first-run=false
-flatpak-purge-timestamp=int64 1774234354
+flatpak-purge-timestamp=int64 1774316218
 install-timestamp=int64 1771400168
 packagekit-historical-updates-timestamp=uint64 1773891961
 security-timestamp=int64 1768708196807879
