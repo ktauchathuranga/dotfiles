@@ -152,7 +152,7 @@ accent-color='purple'
 clock-format='24h'
 clock-show-seconds=false
 clock-show-weekday=true
-color-scheme='default'
+color-scheme='prefer-dark'
 enable-animations=true
 enable-hot-corners=false
 font-hinting='slight'
@@ -163,14 +163,17 @@ show-battery-percentage=true
 toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
-application-children=['org-mozilla-firefox', 'gnome-about-panel', 'org-freedesktop-problems-applet', 'gnome-power-panel', 'org-gnome-software', 'org-gnome-ptyxis', 'org-gnome-nautilus', 'code', 'org-gnome-showtime', 'vlc', 'org-gnome-decibels', 'org-gnome-characters', 'libreoffice-writer', 'org-gnome-extensions', 'org-kicad-eeschema', 'org-kicad-kicad', 'antigravity', 'org-kde-kdenlive', 'org-gnome-texteditor', 'org-sdrangel-sdrangel', 'gnome-wellbeing-panel', 'fr-handbrake-ghb', 'org-gnome-clocks', 'org-gnome-boxes']
-show-banners=true
+application-children=['org-mozilla-firefox', 'gnome-about-panel', 'org-freedesktop-problems-applet', 'gnome-power-panel', 'org-gnome-software', 'org-gnome-ptyxis', 'org-gnome-nautilus', 'code', 'org-gnome-showtime', 'vlc', 'org-gnome-decibels', 'org-gnome-characters', 'libreoffice-writer', 'org-gnome-extensions', 'org-kicad-eeschema', 'org-kicad-kicad', 'antigravity', 'org-kde-kdenlive', 'org-gnome-texteditor', 'org-sdrangel-sdrangel', 'gnome-wellbeing-panel', 'fr-handbrake-ghb', 'org-gnome-clocks', 'org-gnome-boxes', 'docker-desktop']
+show-banners=false
 
 [org/gnome/desktop/notifications/application/antigravity]
 application-id='antigravity.desktop'
 
 [org/gnome/desktop/notifications/application/code]
 application-id='code.desktop'
+
+[org/gnome/desktop/notifications/application/docker-desktop]
+application-id='docker-desktop.desktop'
 
 [org/gnome/desktop/notifications/application/fr-handbrake-ghb]
 application-id='fr.handbrake.ghb.desktop'
@@ -316,7 +319,7 @@ window-width=800
 col-26-visible=false
 col-26-width=0
 columns-order=[0, 12, 1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26]
-sort-col=15
+sort-col=0
 sort-order=0
 
 [org/gnome/login-screen]
@@ -479,9 +482,9 @@ toggle-quick-settings=@as []
 locations=@av []
 
 [org/gnome/software]
-check-timestamp=int64 1774324313
+check-timestamp=int64 1774411152
 first-run=false
-flatpak-purge-timestamp=int64 1774316218
+flatpak-purge-timestamp=int64 1774400184
 install-timestamp=int64 1771400168
 packagekit-historical-updates-timestamp=uint64 1773891961
 security-timestamp=int64 1768708196807879

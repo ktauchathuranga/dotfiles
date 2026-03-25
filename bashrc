@@ -127,8 +127,8 @@ parse_git_branch() {
     fi
 
     # 3. Print the prompt
-    # Light Blue Parentheses: \e[1;36m | Red Branch: \e[0;31m
-    printf " \001\e[1;36m\002(\001\e[0;31m\002%s%s\001\e[1;36m\002)" "$branch" "$status_symbol"
+    # Light Blue Text & Parentheses: \e[1;36m | Red Branch: \e[0;31m
+    printf " \001\e[1;36m\002git:(\001\e[0;31m\002%s%s\001\e[1;36m\002)" "$branch" "$status_symbol"
 }
 
 # --- FINAL PROMPT MODES ---
@@ -138,15 +138,14 @@ parse_git_branch() {
 # ❯
 export PROMPT_SYMBOL=""
 
-# ktauchathuranga@certified-potato ~/cloned/dotfiles (main) ✓ ❯ 
+# ktauchathuranga@certified-potato ~/cloned/dotfiles git:(main) ✓ ❯ 
 # export PS1="\[\e[1;32m\]\u@\h \[\e[0;34m\]\w\$(parse_git_branch) \$(get_exit_status) \[\e[0m\]${PROMPT_SYMBOL}"
 
-# ~/cloned/dotfiles (main) ✓ ❯
+# ~/cloned/dotfiles git:(main) ✓ ❯
 # export PS1="\[\e[0;34m\]\w\$(parse_git_branch) \$(get_exit_status) \[\e[0m\]${PROMPT_SYMBOL}"
 
-# ktauchathuranga ~/cloned/dotfiles (main) ✓ ❯
+# ktauchathuranga ~/cloned/dotfiles git:(main) ✓ ❯
 # export PS1="\[\e[1;32m\]\u \[\e[0;34m\]\w\$(parse_git_branch) \$(get_exit_status) \[\e[0m\]${PROMPT_SYMBOL}"
 
-# dotfiles (main) ✓ ❯ 
+# dotfiles git:(main) ✓ ❯ 
  export PS1="\[\e[0;34m\]\W\$(parse_git_branch) \$(get_exit_status) \[\e[0m\]${PROMPT_SYMBOL}"
-
