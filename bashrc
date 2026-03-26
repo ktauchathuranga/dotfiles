@@ -142,10 +142,10 @@ export PROMPT_SYMBOL=""
 # export PS1="\[\e[1;32m\]\u@\h \[\e[0;34m\]\w\$(parse_git_branch) \$(get_exit_status) \[\e[0m\]${PROMPT_SYMBOL}"
 
 # ~/cloned/dotfiles git:(main) ✓ ❯
-# export PS1="\[\e[0;34m\]\w\$(parse_git_branch) \$(get_exit_status) \[\e[0m\]${PROMPT_SYMBOL}"
+ export PS1="\[\e[0;34m\]\w\$(parse_git_branch) \$(get_exit_status) \[\e[0m\]${PROMPT_SYMBOL}"
 
 # ktauchathuranga ~/cloned/dotfiles git:(main) ✓ ❯
 # export PS1="\[\e[1;32m\]\u \[\e[0;34m\]\w\$(parse_git_branch) \$(get_exit_status) \[\e[0m\]${PROMPT_SYMBOL}"
 
 # dotfiles git:(main) ✓ ❯ 
- export PS1="\[\e[0;34m\]\W\$(parse_git_branch) \$(get_exit_status) \[\e[0m\]${PROMPT_SYMBOL}"
+# export PS1="\[\e[0;34m\]\W\$(parse_git_branch) \$(get_exit_status) \[\e[0m\]${PROMPT_SYMBOL}"

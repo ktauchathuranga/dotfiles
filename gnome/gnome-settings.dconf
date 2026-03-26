@@ -33,7 +33,7 @@ use-system-font=true
 window-size=(uint32 80, uint32 24)
 
 [org/gnome/Ptyxis/Profiles/4fea7cb4d57e5a056d5d446c6942c844]
-palette='gnome'
+palette='Papercolor'
 
 [org/gnome/Showtime/State]
 is-maximized=true
@@ -164,7 +164,7 @@ toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
 application-children=['org-mozilla-firefox', 'gnome-about-panel', 'org-freedesktop-problems-applet', 'gnome-power-panel', 'org-gnome-software', 'org-gnome-ptyxis', 'org-gnome-nautilus', 'code', 'org-gnome-showtime', 'vlc', 'org-gnome-decibels', 'org-gnome-characters', 'libreoffice-writer', 'org-gnome-extensions', 'org-kicad-eeschema', 'org-kicad-kicad', 'antigravity', 'org-kde-kdenlive', 'org-gnome-texteditor', 'org-sdrangel-sdrangel', 'gnome-wellbeing-panel', 'fr-handbrake-ghb', 'org-gnome-clocks', 'org-gnome-boxes', 'docker-desktop']
-show-banners=false
+show-banners=true
 
 [org/gnome/desktop/notifications/application/antigravity]
 application-id='antigravity.desktop'
@@ -319,7 +319,7 @@ window-width=800
 col-26-visible=false
 col-26-width=0
 columns-order=[0, 12, 1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26]
-sort-col=0
+sort-col=15
 sort-order=0
 
 [org/gnome/login-screen]
@@ -335,7 +335,7 @@ fts-enabled=false
 migrated-gtk-settings=true
 
 [org/gnome/nautilus/window-state]
-initial-size=(890, 550)
+initial-size=(853, 555)
 initial-size-file-chooser=(890, 550)
 
 [org/gnome/nm-applet/eap/2d98db61-f9cd-38f7-874d-ee1560824bc2]
@@ -385,7 +385,7 @@ zoom=0.5492758699902518
 last-folder-path='/home/ktauchathuranga/cloned/lumora'
 
 [org/gnome/portal/filechooser/org.chromium.Chromium]
-last-folder-path='/home/ktauchathuranga'
+last-folder-path='/home/ktauchathuranga/cloned/prompt-builder'
 
 [org/gnome/portal/filechooser/org.gnome.Loupe]
 last-folder-path='/home/ktauchathuranga/Downloads'
