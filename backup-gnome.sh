@@ -24,6 +24,14 @@ echo "   .bashrc saved to ./bashrc"
 cp ~/.gitconfig gitconfig
 echo "   .gitconfig saved to ./gitconfig"
 
+# Backup .tmux.conf
+if [ -f ~/.tmux.conf ]; then
+	cp ~/.tmux.conf tmux.conf
+	echo "   .tmux.conf saved to ./tmux.conf"
+else
+	echo "   .tmux.conf not found, skipping."
+fi
+
 # --- Summary ---
 echo "------------------------------------------------"
 echo "Backup complete."

@@ -40,6 +40,9 @@ echo "2. Restoring dotfiles..."
 restore_file "bashrc" "$HOME/.bashrc"
 restore_file "gitconfig" "$HOME/.gitconfig"
 
+# Restore tmux.conf
+restore_file "tmux.conf" "$HOME/.tmux.conf"
+
 echo "------------------------------------------------"
 echo "Restore complete!"
 echo "Please run 'source ~/.bashrc' to apply bash changes immediately,"
