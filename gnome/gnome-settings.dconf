@@ -5,8 +5,12 @@ logo-size=5.0
 [org/freedesktop/folks]
 primary-store='eds:a1d455797e9fc3b490d2ccea995b49c86d6e52e2'
 
+[org/freedesktop/ibus/engine/typing-booster]
+dictionary='en_US'
+inputmethod='NoIME'
+
 [org/gnome/Characters]
-recent-characters=['😇', '🌃', '🫂', '🌙', '♾️', '🥺', '🍃']
+recent-characters=['😕', '🙁', '😬', '😇', '🌃', '🫂', '🌙', '♾️', '🥺', '🍃']
 
 [org/gnome/Connections]
 first-run=false
@@ -36,7 +40,7 @@ window-size=(uint32 80, uint32 24)
 palette='Papercolor'
 
 [org/gnome/Showtime/State]
-is-maximized=true
+is-maximized=false
 
 [org/gnome/Snapshot]
 is-maximized=false
@@ -44,7 +48,7 @@ window-height=640
 window-width=800
 
 [org/gnome/TextEditor]
-last-save-directory='file:///home/ktauchathuranga/Documents'
+last-save-directory='file:///home/ktauchathuranga/Music'
 
 [org/gnome/baobab/ui]
 active-chart='rings'
@@ -74,7 +78,8 @@ window-maximized=false
 window-size=(768, 600)
 
 [org/gnome/clocks]
-alarms=[{'name': <''>, 'id': <'45f4e3e31ab82d058662dda06998c54c'>, 'hour': <4>, 'minute': <0>, 'ring_time': <'2026-03-20T04:00:00+05:30'>, 'days': <[1, 2, 3, 4, 5, 6, 7]>, 'snooze_minutes': <10>, 'ring_minutes': <5>}]
+alarms=[{'name': <''>, 'id': <'45f4e3e31ab82d058662dda06998c54c'>, 'hour': <4>, 'minute': <0>, 'ring_time': <'2026-05-08T04:00:00+05:30'>, 'days': <[1, 2, 3, 4, 5, 6, 7]>, 'snooze_minutes': <10>, 'ring_minutes': <5>, 'sound_uri': <'resource:///org/gnome/clocks/sounds/alarms/beep-beep.oga'>}]
+timers=[{'duration': <360>, 'name': <''>}]
 
 [org/gnome/clocks/state/window]
 maximized=false
@@ -82,21 +87,34 @@ panel-id='alarm'
 size=(870, 690)
 
 [org/gnome/control-center]
-last-panel='system'
+last-panel='power'
 window-state=(800, 600, false)
 
+[org/gnome/desktop/a11y]
+always-show-universal-access-status=false
+
 [org/gnome/desktop/a11y/applications]
+screen-keyboard-enabled=false
+screen-magnifier-enabled=false
 screen-reader-enabled=false
 
 [org/gnome/desktop/a11y/interface]
 show-status-shapes=false
 
 [org/gnome/desktop/a11y/keyboard]
-togglekeys-enable=false
+stickykeys-enable=false
+togglekeys-enable=true
 
 [org/gnome/desktop/a11y/magnifier]
 color-saturation=1.0
+cross-hairs-length=58
 mag-factor=2.5
+show-cross-hairs=false
+
+[org/gnome/desktop/a11y/mouse]
+dwell-click-enabled=false
+secondary-click-enabled=true
+secondary-click-time=1.2
 
 [org/gnome/desktop/app-folders]
 folder-children=['System', 'Utilities', 'YaST', 'Pardus']
@@ -124,8 +142,8 @@ translate=true
 [org/gnome/desktop/background]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/ktauchathuranga/.local/share/backgrounds/2026-02-08-17-21-38-fav.png'
-picture-uri-dark='file:///home/ktauchathuranga/.local/share/backgrounds/2026-02-08-17-21-38-fav.png'
+picture-uri='file:///usr/share/backgrounds/f43/default/f43.xml'
+picture-uri-dark='file:///usr/share/backgrounds/f43/default/f43.xml'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -152,25 +170,32 @@ accent-color='purple'
 clock-format='24h'
 clock-show-seconds=false
 clock-show-weekday=true
-color-scheme='default'
+color-scheme='prefer-dark'
 enable-animations=true
 enable-hot-corners=false
 font-hinting='slight'
 icon-theme='Adwaita'
+locate-pointer=true
 monospace-font-name='Noto Sans Mono 11'
 overlay-scrolling=true
 show-battery-percentage=true
 toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
-application-children=['org-mozilla-firefox', 'gnome-about-panel', 'org-freedesktop-problems-applet', 'gnome-power-panel', 'org-gnome-software', 'org-gnome-ptyxis', 'org-gnome-nautilus', 'code', 'org-gnome-showtime', 'vlc', 'org-gnome-decibels', 'org-gnome-characters', 'libreoffice-writer', 'org-gnome-extensions', 'org-kicad-eeschema', 'org-kicad-kicad', 'antigravity', 'org-kde-kdenlive', 'org-gnome-texteditor', 'org-sdrangel-sdrangel', 'gnome-wellbeing-panel', 'fr-handbrake-ghb', 'org-gnome-clocks', 'org-gnome-boxes', 'docker-desktop']
-show-banners=true
+application-children=['org-mozilla-firefox', 'gnome-about-panel', 'org-freedesktop-problems-applet', 'gnome-power-panel', 'org-gnome-software', 'org-gnome-ptyxis', 'org-gnome-nautilus', 'code', 'org-gnome-showtime', 'vlc', 'org-gnome-decibels', 'org-gnome-characters', 'libreoffice-writer', 'org-gnome-extensions', 'org-kicad-eeschema', 'org-kicad-kicad', 'antigravity', 'org-kde-kdenlive', 'org-gnome-texteditor', 'org-sdrangel-sdrangel', 'gnome-wellbeing-panel', 'fr-handbrake-ghb', 'org-gnome-clocks', 'org-gnome-boxes', 'docker-desktop', 'org-gnome-baobab', 'com-heroicgameslauncher-hgl', 'audacity']
+show-banners=false
 
 [org/gnome/desktop/notifications/application/antigravity]
 application-id='antigravity.desktop'
 
+[org/gnome/desktop/notifications/application/audacity]
+application-id='audacity.desktop'
+
 [org/gnome/desktop/notifications/application/code]
 application-id='code.desktop'
+
+[org/gnome/desktop/notifications/application/com-heroicgameslauncher-hgl]
+application-id='com.heroicgameslauncher.hgl.desktop'
 
 [org/gnome/desktop/notifications/application/docker-desktop]
 application-id='docker-desktop.desktop'
@@ -192,6 +217,9 @@ application-id='libreoffice-writer.desktop'
 
 [org/gnome/desktop/notifications/application/org-freedesktop-problems-applet]
 application-id='org.freedesktop.problems.applet.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-baobab]
+application-id='org.gnome.baobab.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-boxes]
 application-id='org.gnome.Boxes.desktop'
@@ -257,6 +285,7 @@ speed=0.43162393162393164
 two-finger-scrolling-enabled=true
 
 [org/gnome/desktop/privacy]
+remove-old-temp-files=true
 report-technical-problems=false
 
 [org/gnome/desktop/remote-desktop/rdp]
@@ -267,13 +296,14 @@ view-only=false
 
 [org/gnome/desktop/screen-time-limits]
 daily-limit-enabled=false
+daily-limit-seconds=uint32 28800
 grayscale=true
 
 [org/gnome/desktop/screensaver]
 color-shading-type='solid'
 lock-enabled=false
 picture-options='zoom'
-picture-uri='file:///home/ktauchathuranga/.local/share/backgrounds/2026-02-08-17-21-38-fav.png'
+picture-uri='file:///usr/share/backgrounds/f43/default/f43.xml'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -281,6 +311,7 @@ secondary-color='#000000000000'
 sort-order=['org.gnome.Settings.desktop', 'org.gnome.Contacts.desktop', 'org.gnome.Nautilus.desktop']
 
 [org/gnome/desktop/sound]
+allow-volume-above-100-percent=false
 event-sounds=true
 theme-name='__custom'
 
@@ -301,6 +332,7 @@ toggle-fullscreen=['<Super>f']
 
 [org/gnome/desktop/wm/preferences]
 focus-mode='sloppy'
+visual-bell=false
 
 [org/gnome/evolution-data-server]
 migrated=true
@@ -313,8 +345,8 @@ current-tab='processes'
 maximized=false
 show-dependencies=false
 show-whose-processes='user'
-window-height=720
-window-width=800
+window-height=717
+window-width=844
 
 [org/gnome/gnome-system-monitor/proctree]
 col-26-visible=false
@@ -326,9 +358,13 @@ sort-order=0
 [org/gnome/login-screen]
 enable-fingerprint-authentication=false
 enable-smartcard-authentication=false
+enable-switchable-authentication=false
 
 [org/gnome/mutter]
 overlay-key='Super_L'
+
+[org/gnome/nautilus/icon-view]
+default-zoom-level='medium'
 
 [org/gnome/nautilus/preferences]
 default-folder-viewer='icon-view'
@@ -338,6 +374,7 @@ migrated-gtk-settings=true
 [org/gnome/nautilus/window-state]
 initial-size=(890, 550)
 initial-size-file-chooser=(890, 550)
+maximized=false
 
 [org/gnome/nm-applet/eap/2d98db61-f9cd-38f7-874d-ee1560824bc2]
 ignore-ca-cert=false
@@ -367,7 +404,12 @@ ignore-phase2-ca-cert=false
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
 
+[org/gnome/orca/default/metadata]
+display-name='Default'
+internal-name='default'
+
 [org/gnome/papers]
+document-directory=@ms '/home/ktauchathuranga/Documents/research'
 night-mode=false
 
 [org/gnome/papers/default]
@@ -380,13 +422,13 @@ show-sidebar=true
 sizing-mode='free'
 window-height=992
 window-maximized=true
-zoom=0.5492758699902518
+zoom=0.83682885906040261
 
 [org/gnome/portal/filechooser/antigravity]
 last-folder-path='/home/ktauchathuranga/cloned/lumora'
 
 [org/gnome/portal/filechooser/org.chromium.Chromium]
-last-folder-path='/home/ktauchathuranga/cloned/dotfiles'
+last-folder-path='/home/ktauchathuranga/cloned/terminal'
 
 [org/gnome/portal/filechooser/org.gnome.Loupe]
 last-folder-path='/home/ktauchathuranga/Downloads'
@@ -394,14 +436,20 @@ last-folder-path='/home/ktauchathuranga/Downloads'
 [org/gnome/portal/filechooser/org.gnome.Nautilus]
 last-folder-path='/run/media/ktauchathuranga/cupcake'
 
+[org/gnome/portal/filechooser/org.gnome.Papers]
+last-folder-path='/home/ktauchathuranga/Documents/research'
+
 [org/gnome/portal/filechooser/org.gnome.Settings]
 last-folder-path='/home/ktauchathuranga/Pictures'
 
 [org/gnome/portal/filechooser/org.gnome.TextEditor]
-last-folder-path='/home/ktauchathuranga/Documents'
+last-folder-path='/home/ktauchathuranga/Music'
 
 [org/gnome/portal/filechooser/org.gnome.Zenity]
-last-folder-path='/home/ktauchathuranga'
+last-folder-path='/home/ktauchathuranga/cloned/lrpt-encoder'
+
+[org/gnome/portal/filechooser/org.mozilla.firefox]
+last-folder-path='/home/ktauchathuranga/Downloads'
 
 [org/gnome/settings-daemon/plugins/color]
 night-light-enabled=false
@@ -452,26 +500,67 @@ enabled-connections=@as []
 enabled-connections=@as []
 
 [org/gnome/shell]
-app-picker-layout=[{'org.fedoraproject.MediaWriter.desktop': <{'position': <0>}>, 'org.gnome.Contacts.desktop': <{'position': <1>}>, 'org.gnome.clocks.desktop': <{'position': <2>}>, 'org.gnome.Maps.desktop': <{'position': <3>}>, 'org.gnome.SimpleScan.desktop': <{'position': <4>}>, 'org.gnome.Settings.desktop': <{'position': <5>}>, 'org.gnome.Boxes.desktop': <{'position': <6>}>, 'org.gnome.Calendar.desktop': <{'position': <7>}>, 'org.gnome.Showtime.desktop': <{'position': <8>}>, 'libreoffice-calc.desktop': <{'position': <9>}>, 'Utilities': <{'position': <10>}>, 'System': <{'position': <11>}>, 'org.gnome.Extensions.desktop': <{'position': <12>}>, 'org.gnome.Characters.desktop': <{'position': <13>}>, 'org.gnome.Yelp.desktop': <{'position': <14>}>, 'libreoffice-writer.desktop': <{'position': <15>}>, 'org.gnome.Ptyxis.desktop': <{'position': <16>}>, 'gpredict.desktop': <{'position': <17>}>, 'org.kicad.kicad.desktop': <{'position': <18>}>, 'org.kicad.gerbview.desktop': <{'position': <19>}>, 'org.kicad.bitmap2component.desktop': <{'position': <20>}>, 'org.kicad.pcbcalculator.desktop': <{'position': <21>}>}, {'libreoffice-impress.desktop': <{'position': <0>}>, 'org.kicad.pcbnew.desktop': <{'position': <1>}>, 'org.kicad.eeschema.desktop': <{'position': <2>}>, 'mpv.desktop': <{'position': <3>}>, 'opencascade-draw.desktop': <{'position': <4>}>, 'org.raspberrypi.rpi-imager.desktop': <{'position': <5>}>, 'sdrpp.desktop': <{'position': <6>}>, 'org.gnome.Software.desktop': <{'position': <7>}>, 'vncviewer.desktop': <{'position': <8>}>, 'urh.desktop': <{'position': <9>}>, 'code.desktop': <{'position': <10>}>, 'vlc.desktop': <{'position': <11>}>, 'dk.gqrx.gqrx.desktop': <{'position': <12>}>, 'com.simulide.simulide.desktop': <{'position': <13>}>, 'antigravity.desktop': <{'position': <14>}>, 'gnuradio-grc.desktop': <{'position': <15>}>, 'org.kde.kdenlive.desktop': <{'position': <16>}>, 'com.obsproject.Studio.desktop': <{'position': <17>}>, 'qsstv.desktop': <{'position': <18>}>, 'satdump.desktop': <{'position': <19>}>, 'org.sdrangel.SDRangel.desktop': <{'position': <20>}>, 'fr.handbrake.ghb.desktop': <{'position': <21>}>, 'org.gnome.Calculator.desktop': <{'position': <22>}>, 'nvim.desktop': <{'position': <23>}>}, {'putty.desktop': <{'position': <0>}>, 'org.gnome.tweaks.desktop': <{'position': <1>}>, 'com.redis.RedisInsight.desktop': <{'position': <2>}>, 'docker-desktop.desktop': <{'position': <3>}>, 'com.jetbrains.IntelliJ-IDEA-Ultimate.desktop': <{'position': <4>}>}]
+app-picker-layout=[{'org.fedoraproject.MediaWriter.desktop': <{'position': <0>}>, 'org.gnome.Contacts.desktop': <{'position': <1>}>, 'org.gnome.clocks.desktop': <{'position': <2>}>, 'org.gnome.Maps.desktop': <{'position': <3>}>, 'org.gnome.SimpleScan.desktop': <{'position': <4>}>, 'org.gnome.Settings.desktop': <{'position': <5>}>, 'org.gnome.Boxes.desktop': <{'position': <6>}>, 'org.gnome.Calendar.desktop': <{'position': <7>}>, 'org.gnome.Showtime.desktop': <{'position': <8>}>, 'libreoffice-calc.desktop': <{'position': <9>}>, 'Utilities': <{'position': <10>}>, 'System': <{'position': <11>}>, 'org.gnome.Extensions.desktop': <{'position': <12>}>, 'org.gnome.Characters.desktop': <{'position': <13>}>, 'org.gnome.Yelp.desktop': <{'position': <14>}>, 'libreoffice-writer.desktop': <{'position': <15>}>, 'org.gnome.Ptyxis.desktop': <{'position': <16>}>, 'gpredict.desktop': <{'position': <17>}>, 'org.kicad.kicad.desktop': <{'position': <18>}>, 'org.kicad.gerbview.desktop': <{'position': <19>}>, 'org.kicad.bitmap2component.desktop': <{'position': <20>}>, 'org.kicad.pcbcalculator.desktop': <{'position': <21>}>}, {'libreoffice-impress.desktop': <{'position': <0>}>, 'org.kicad.pcbnew.desktop': <{'position': <1>}>, 'org.kicad.eeschema.desktop': <{'position': <2>}>, 'mpv.desktop': <{'position': <3>}>, 'opencascade-draw.desktop': <{'position': <4>}>, 'org.raspberrypi.rpi-imager.desktop': <{'position': <5>}>, 'sdrpp.desktop': <{'position': <6>}>, 'org.gnome.Software.desktop': <{'position': <7>}>, 'vncviewer.desktop': <{'position': <8>}>, 'urh.desktop': <{'position': <9>}>, 'code.desktop': <{'position': <10>}>, 'vlc.desktop': <{'position': <11>}>, 'dk.gqrx.gqrx.desktop': <{'position': <12>}>, 'com.simulide.simulide.desktop': <{'position': <13>}>, 'antigravity.desktop': <{'position': <14>}>, 'gnuradio-grc.desktop': <{'position': <15>}>, 'org.kde.kdenlive.desktop': <{'position': <16>}>, 'com.obsproject.Studio.desktop': <{'position': <17>}>, 'qsstv.desktop': <{'position': <18>}>, 'satdump.desktop': <{'position': <19>}>, 'org.sdrangel.SDRangel.desktop': <{'position': <20>}>, 'fr.handbrake.ghb.desktop': <{'position': <21>}>, 'org.gnome.Calculator.desktop': <{'position': <22>}>, 'nvim.desktop': <{'position': <23>}>}, {'putty.desktop': <{'position': <0>}>, 'org.gnome.tweaks.desktop': <{'position': <1>}>, 'com.redis.RedisInsight.desktop': <{'position': <2>}>, 'docker-desktop.desktop': <{'position': <3>}>, 'audacity.desktop': <{'position': <4>}>, 'java-25-openjdk-jconsole.desktop': <{'position': <5>}>}]
 command-history=['bash -l -c "code"', 'r', 'tree', 'cmd', 'cat']
 disable-user-extensions=false
 disabled-extensions=['apps-menu@gnome-shell-extensions.gcampax.github.com', 'background-logo@fedorahosted.org', 'window-list@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com']
-enabled-extensions=['launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'gnomebedtime@ionutbortis.gmail.com', 'monochrome-toggle@ktauchathuranga@gmail.com', 'achroma@ktauchathuranga@gmail.com', 'achroma@ktauchathuranga.github.io']
+enabled-extensions=['launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'gnomebedtime@ionutbortis.gmail.com', 'monochrome-toggle@ktauchathuranga@gmail.com', 'achroma@ktauchathuranga@gmail.com', 'achroma@ktauchathuranga.github.io', 'blur-my-shell@aunetx']
 favorite-apps=['org.gnome.Snapshot.desktop', 'org.mozilla.firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.TextEditor.desktop']
-last-selected-power-profile='performance'
+last-selected-power-profile='power-saver'
 welcome-dialog-last-shown-version='49.1'
 
 [org/gnome/shell/app-switcher]
 current-workspace-only=true
 
 [org/gnome/shell/extensions/achroma]
-current-profile='grayscale'
+current-profile='sepia'
 custom-profiles='[]'
 is-previewing=false
 preview-profile='{"factor":1,"brightness":0,"contrast":0,"tint":null}'
 
 [org/gnome/shell/extensions/bedtime-mode]
 bedtime-mode-active=false
+
+[org/gnome/shell/extensions/blur-my-shell]
+rounded-blur-found=false
+settings-version=2
+
+[org/gnome/shell/extensions/blur-my-shell/appfolder]
+brightness=0.59999999999999998
+sigma=30
+
+[org/gnome/shell/extensions/blur-my-shell/applications]
+pipeline='pipeline_default'
+
+[org/gnome/shell/extensions/blur-my-shell/coverflow-alt-tab]
+pipeline='pipeline_default'
+
+[org/gnome/shell/extensions/blur-my-shell/dash-to-dock]
+blur=true
+brightness=0.59999999999999998
+pipeline='pipeline_default_rounded'
+sigma=30
+static-blur=true
+style-dash-to-dock=0
+
+[org/gnome/shell/extensions/blur-my-shell/lockscreen]
+pipeline='pipeline_default'
+
+[org/gnome/shell/extensions/blur-my-shell/overview]
+pipeline='pipeline_default'
+
+[org/gnome/shell/extensions/blur-my-shell/panel]
+brightness=0.59999999999999998
+corner-radius=0
+pipeline='pipeline_default'
+sigma=30
+
+[org/gnome/shell/extensions/blur-my-shell/screenshot]
+pipeline='pipeline_default'
+
+[org/gnome/shell/extensions/blur-my-shell/window-list]
+brightness=0.59999999999999998
+sigma=30
 
 [org/gnome/shell/keybindings]
 switch-to-application-1=@as []
@@ -484,13 +573,14 @@ toggle-quick-settings=@as []
 locations=@av []
 
 [org/gnome/software]
-check-timestamp=int64 1774573602
+check-timestamp=int64 1778812467
 first-run=false
-flatpak-purge-timestamp=int64 1774573517
-install-timestamp=int64 1771400168
-packagekit-historical-updates-timestamp=uint64 1773891961
-security-timestamp=int64 1768708196807879
-update-notification-timestamp=int64 1774501932
+flatpak-purge-timestamp=int64 1778809597
+install-timestamp=int64 1778087606
+packagekit-historical-updates-timestamp=uint64 1777957952
+security-timestamp=int64 1778740308800032
+update-notification-timestamp=int64 1778658824
+upgrade-notification-timestamp=int64 1777443114
 
 [org/gnome/system/location]
 enabled=false
@@ -508,13 +598,13 @@ sort-directories-first=false
 
 [org/gtk/settings/color-chooser]
 custom-colors=[(1.0, 0.56470588235294117, 0.90980392156862744, 1.0)]
-selected-color=(true, 0.75294117647058822, 0.38039215686274508, 0.79607843137254897, 1.0)
+selected-color=(true, 0.36862745098039218, 0.36078431372549019, 0.39215686274509803, 1.0)
 
 [org/gtk/settings/file-chooser]
 clock-format='24h'
 date-format='regular'
 location-mode='path-bar'
-show-hidden=true
+show-hidden=false
 show-size-column=true
 show-type-column=true
 sidebar-width=282
